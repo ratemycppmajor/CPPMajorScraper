@@ -1,0 +1,21 @@
+{
+  "name": "cppmajorsscraper",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scrapeCPP.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.19.0",
+    "puppeteer": "^24.17.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.19.0"
+  }
+}

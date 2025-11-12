@@ -1,0 +1,779 @@
+[
+  {
+    "college": "College of Agriculture",
+    "department": "Agribusiness, Food Industry Mgmt, and Ag Science",
+    "major": "Agribusiness and Food Industry Management",
+    "url": "https://www.cpp.edu/programs/agri/abm/agribusiness-food-industry-management.shtml",
+    "description": "Combine your passion for crops or livestock with business skills to manage anything from a family farm to a global company. The only program of its kind in California, it offers a strong foundation in agribusiness—covering marketing, accounting, food laws, and more—while preparing you to navigate industry challenges and tailor your path to your career goals."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Agribusiness, Food Industry Mgmt, and Ag Science",
+    "major": "Agricultural Science",
+    "url": "https://www.cpp.edu/programs/agri/ags/agricultural-science.shtml",
+    "description": "A degree in agricultural science will equip you with the knowledge and skills needed to address critical challenges in sustainable food production, environmental stewardship and global food security. Blending science, technology and hands-on experience, this interdisciplinary program prepares you to work in general agriculture, animal science, agribusiness, agricultural education and research."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Animal and Veterinary Science",
+    "major": "Animal Health Science",
+    "url": "https://www.cpp.edu/programs/agri/ahs/animal-health-science.shtml",
+    "description": "Turn your passion for animals into a career by working alongside veterinarians, assisting with surgeries, and taking x-rays of animals big and small. As the only 4-year AVMA-accredited Veterinary Technician program on the West Coast, you'll graduate ready to take the VTNE and become a licensed registered veterinary technologist (RVTg)."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Animal and Veterinary Science",
+    "major": "Animal Science",
+    "url": "https://www.cpp.edu/programs/agri/as/animal-science-b.s-general.shtml",
+    "description": "Get ready for a career in the thriving animal industry with hands-on learning and access to more animals than any other Southern California college. The Animal Science general option prepares you for animal-focused careers beyond veterinary medicine, offering broad coursework across species and specialties to build a strong foundation in animal sciences."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Animal and Veterinary Science",
+    "major": "Pre-Veterinary Science/Graduate School",
+    "url": "https://www.cpp.edu/programs/agri/as/pre-veterinary-graduate-school.shtml",
+    "description": "Be on your way to achieving your dream of becoming a veterinarian or going to graduate school with our in-depth and hands-on curriculum. The Pre-Vet/Graduate School option meets the admission requirements of most veterinary medicine programs, and it equips you for advanced study in fields related to animal care or husbandry, including animal nutrition, meat science and more."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Apparel Merchandising and Management",
+    "major": "Design and Production",
+    "url": "https://www.cpp.edu/programs/agri/amm/design-and-production.shtml",
+    "description": "Design a clothing line from scratch and see it through to production alongside fellow artists and visionaries. With our blend of technical and creative aspects of design, you’ll get your hands on hardware, eyes on industry-level software and watch as people all over campus wear your heart on their sleeves. Located just outside of Los Angeles, you’ll engage in cutting-edge practices and trends from one of the major fashion centers in a global industry, build a strong portfolio and be ready to take on a career in the fashion industry."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Apparel Merchandising and Management",
+    "major": "Fashion Retailing",
+    "url": "https://www.cpp.edu/programs/agri/amm/apparel-merchandising-and-management-fashion-retailing.shtml",
+    "description": "Help shape culture and expression by bringing fashion to the masses. Through studying fashion retailing, you will be joining a $400 billion industry in the United States alone. Establish a broad foundation in the apparel field, covering topics from market research through product development, production, distribution and brand marketing. Then, begin advanced practice in retailing, wholesale operations and brand development and tailor your degree to your dream career."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Apparel Merchandising and Management",
+    "major": "Textile Technology and Sustainability",
+    "url": "https://www.cpp.edu/programs/agri/amm/textile-technology-and-sustainability.shtml",
+    "description": "Revolutionize the way we produce and consume fashion with an eye toward sustainability. After building a comprehensive foundation in apparel design and production, discover ways to reduce the environmental impact of this massive global industry and join a growing movement of sustainable practices in fashion. With our pairing of theory and practice, you will become an innovator of textile choices, dyeing and print methods, and supply chain management."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Department of Plant Science",
+    "major": "Plant Science",
+    "url": "https://www.cpp.edu/programs/agri/plant-science/plant-science.shtml",
+    "description": "Grow your career and feed the future. Here, we emphasize high-impact teaching practices to develop an inclusive and highly skilled workforce in sustainable fruit and vegetable, agronomic and tree crop industries; urban agriculture, controlled environment agriculture; and plant science across the green industries from water resources and irrigation design, arboriculture, and sports turf management to botanical gardens and natural resources conservation."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Nutrition and Food Science",
+    "major": "Culinology",
+    "url": "https://www.cpp.edu/programs/agri/fst/culinology.shtml",
+    "description": "Here, we encourage you to apply creativity and science. The Culinology® option blends food science and culinary arts and provides you with the tools to develop exciting new foods for retail and food service. This option is a great fit if you are interested in product development and allows you to take courses in Food Science and Technology and Culinary Arts. Culinology® is a trademark of the Research Chefs Association (RCA). This option is one of few programs approved by RCA in the United States."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Nutrition and Food Science",
+    "major": "Food Science and Technology",
+    "url": "https://www.cpp.edu/programs/agri/fst/general.shtml",
+    "description": "Create the next popular food craze or prepare for countless science careers. The General Subplan/Option is created to provide students with a more flexible pathway for graduation, while still completing the core requirements of a Food Science and Technology major program. In this option students have the flexibility to choose elective courses that could meet the requirements of a pre-professional degree (pre-med, pre-dental, pre-pharm, pre-vet) or several minors such as plant-based foods and nutrition, business, nutrition, and more."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Nutrition and Food Science",
+    "major": "Science and Technology",
+    "url": "https://www.cpp.edu/programs/agri/fst/science-and-technology.shtml",
+    "description": "Gain a fundamental understanding of food by exploring biochemistry, food processing, safety, and packaging. This option, approved by the Institute of Food Technologists (IFT), combines scientific concepts with theoretical applications. Elective courses expand beyond the foundational required courses and prepare students for careers as food chemists, food microbiologists, or food-processing technologists. It is also a good fit for those interested in advanced degrees in science or technology."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Nutrition and Food Science",
+    "major": "Dietetics",
+    "url": "https://www.cpp.edu/programs/agri/ntr/dietetics.shtml",
+    "description": "Passionate about food? Curious about how it works with our bodies to fuel our future? The Dietetics option mixes science with practical experience, preparing you for advanced studies to become a registered dietitian or dietetic technician and make a real impact in food, health and wellness."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Nutrition and Food Science",
+    "major": "Nutrition and Health",
+    "url": "https://www.cpp.edu/programs/agri/ntr/nutrition-and-health.shtml",
+    "description": "Fuel your passion for health and wellness with the Nutrition and Health option, where the science of nutrition connects with the skills needed to support healthier lives. Whether you’re exploring disease prevention, mental and physical well-being or the psychology of health, this program offers the flexibility to customize your path. Here, your journey blends science, creativity and practical experience to prepare you for a fulfilling career in health and nutrition."
+  },
+  {
+    "college": "College of Agriculture",
+    "department": "Nutrition and Food Science",
+    "major": "Nutrition Science",
+    "url": "https://www.cpp.edu/programs/agri/ntr/nutrition-science.shtml",
+    "description": "Explore complex nutrition issues by integrating core courses, lab work and health sciences. The program offers two tracks: Pre-professional for students aiming for careers in medicine, dental, veterinary or graduate studies, and Animal Nutrition for those focusing on animal health. With a strong emphasis on understanding the role of nutrition in health and disease, this program prepares students for careers in research, healthcare and specialized nutrition fields."
+  },
+  {
+    "college": "College of Business Administration",
+    "department": "Business Administration",
+    "major": "Accounting",
+    "url": "https://www.cpp.edu/programs/cba/accounting/accounting.shtml",
+    "description": "The accounting option at Cal Poly Pomona equips students with comprehensive accounting knowledge and foundational insights into related fields like business law, economics, and marketing. Students complete core courses such as Cost Accounting, Intermediate Accounting, Auditing Theory, Taxation, and Accounting Information Systems, with options for advanced specialization. Courses blend theory with practical application and modern technology, preparing students for careers in public, private, and governmental accounting."
+  },
+  {
+    "college": "College of Business Administration",
+    "department": "Business Administration",
+    "major": "Computer Information Systems",
+    "url": "https://www.cpp.edu/programs/cba/cis/computer-information-systems.shtml",
+    "description": "Whether it’s building business applications, strengthening cybersecurity and computer forensics, or harnessing the power of business intelligence, our students gain hands-on experience that prepares them to lead. Through our signature “learn-by-doing” approach, our department has a proud history of driving innovation in information systems education. Employers consistently praise our graduates for their ability to “hit the ground running,” their “can-do attitude,” and their leadership and teamwork skills. Join us at CIS and get ready to shape the future of technology and business!"
+  },
+  {
+    "college": "College of Business Administration",
+    "department": "Business Administration",
+    "major": "E-Business",
+    "url": "https://www.cpp.edu/programs/cba/tom/e-business.shtml",
+    "description": "The E-Business (EBZ) option provides a unique and valuable combination of management and technology education with its ever-changing curriculum to keep up with fast-changing business practices. The concentration integrates business and technology through hands-on experience with diverse technologies such as Radio Frequency Identification (RFID), Dreamweaver, Android Application Programming Interface (API) and SAP, to name a few. The competitive advantages from supply chain management and e-Business are becoming the game changers for the business world. Your choice of Supply Chain Management and E- Business will set the right steps into the future business world."
+  },
+  {
+    "college": "College of Business Administration",
+    "department": "Business Administration",
+    "major": "Finance, Real Estate, and Law",
+    "url": "https://www.cpp.edu/programs/cba/frl/finance-real-estate-law.shtml",
+    "description": "Cal Poly Pomona’s College of Business Administration offers a dynamic academic option for aspiring professionals in finance, real estate, and business law. Rooted in Cal Poly Pomona's polytechnic tradition, the curriculum blends theory with practical application, empowering students to become people-oriented leaders in the business world. Students can tailor their education by choosing an emphasis in finance, real estate, or business law and contract management, each designed to align with specific career goals. Whether mastering financial analysis, preparing for the CFA® designation, meeting broker equivalency requirements in real estate, or diving into the intricacies of business law, FRL students gain the skills and credentials to thrive in competitive industries."
+  },
+  {
+    "college": "College of Business Administration",
+    "department": "Business Administration",
+    "major": "International Business",
+    "url": "https://www.cpp.edu/programs/cba/ibm/international-business.shtml",
+    "description": "In today’s dynamic and interconnected world, employers seek forward-thinking professionals who can adapt to the ever-changing global economy. The International Business option provides students with a solid grounding in the principles of business management as well as interdisciplinary specialization in areas required to understand and react to today’s globalized markets. The objectives of this option are twofold: to provide students with the business knowledge and skills essential for careers in international business; and to provide them with an understanding and appreciation of the culture, language, economics, politics, and history of other parts of the world, with particular emphasis on a geographic area in which the student has a special career interest, or a functional area of focus on the global scene. The curriculum requires completion of the business required courses which provides to all business majors a foundation in the theory and practice of modern business management."
+  },
+  {
+    "college": "College of Business Administration",
+    "department": "Business Administration",
+    "major": "Management and Human Resources",
+    "url": "https://www.cpp.edu/programs/cba/mhr/management-and-human-resources.shtml",
+    "description": "The Management and Human Resources (MHR) option prepares students to become successful professionals by employing discipline-based knowledge to develop our students’ skills in management, human resources and entrepreneurship. MHR students receive education and training in areas such as leadership development, ethics, managing diversity, employee hiring and retention, training development, employment law, and creating a business startup. Students must select one of the following areas of emphasis: Management and Leadership, Human Resources Management, or Entrepreneurship."
+  },
+  {
+    "college": "College of Business Administration",
+    "department": "Business Administration",
+    "major": "Marketing Management",
+    "url": "https://www.cpp.edu/programs/cba/ibm/marketing.shtml",
+    "description": "The Marketing Management option is designed to give students an understanding of the factors both within the internal and external environments that affect the development and implementation of plans to serve markets and to attain economic goals. Emphasis is placed on determining market needs and decision-making concerning product, pricing, promotion and distribution strategies required to meet those market needs."
+  },
+  {
+    "college": "College of Business Administration",
+    "department": "Business Administration",
+    "major": "Technology and Operations Management",
+    "url": "https://www.cpp.edu/programs/cba/tom/technology-and-operations-management.shtml",
+    "description": "Students in the Technology and Operations Management (TOM) option will focus on the design, implementation, control and improvement of processes and activities that are involved in the daily running of a business. Heavy emphasis is placed on the study of computer applications for helping managers plan, analyze data, make decisions and communicate. TOM students are provided a broad background in the field, after which they choose one of the following areas of specialization: Supply Chain Management, Management of Technology and Service Operations Management."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Aerospace Engineering",
+    "major": "Aerospace Engineering",
+    "url": "https://www.cpp.edu/programs/eng/aerospace-engineering/aerospace-engineering.shtml",
+    "description": "Expand your horizons with a theoretical and experimental study of aerodynamics, astrodynamics, propulsion, flight mechanics, systems engineering and aerospace vehicle design – literal rocket science and more!   Through hands-on projects and cutting-edge research that simulate the aerospace industry, as well as internships and job placements, you will graduate with both a conceptual understanding and a portfolio of real-world accomplishments. With program emphases in aeronautics and astronautics, you can chart your course and propel yourself toward your dream career in aerospace."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Chemical and Materials Engineering",
+    "major": "Chemical Engineering",
+    "url": "https://www.cpp.edu/programs/eng/chemical-and-materials-engineering/chemical-engineering.shtml",
+    "description": "Make a transformational impact on the world by creating products that people rely on every day. Build the foundations to one day produce groundbreaking medications, develop the trendiest cosmetics, implement sustainable energy sources, or ensure food safety. With an interdisciplinary study of chemistry, biology, physics, reaction engineering, materials science, and biotechnology, chemical engineering provides the dynamic education needed to enter countless fields."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Chemical and Materials Engineering",
+    "major": "Materials Engineering",
+    "url": "https://www.cpp.edu/engineering/cme/index.shtml",
+    "description": "Deal with developing products and processes based on understanding the structure of materials. The goal of the materials engineer is to understand the structure of materials (at the micro- or the nano level) to improve their properties and ultimately their performance. Materials engineers apply this knowledge to the production, selection, and utilization of materials. Since engineers are called upon to work with new ideas and materials, the engineering graduate with a minor in Materials Engineering is very well prepared to respond to such a challenge and thus has a career advantage."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Civil Engineering",
+    "major": "Environmental Engineering",
+    "url": "https://www.cpp.edu/programs/eng/civil-engineering/environmental.shtml",
+    "description": "Contribute to the health and protection of populations and the environment in one of the fastest-growing fields in engineering. Prepare for lifesaving work in developing systems for water quality, pollution reduction, energy and sustainability. Study air and water quality, biology, geology, water supply systems and more, and lay the foundation for your dream career."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Civil Engineering",
+    "major": "Civil Engineering",
+    "url": "https://www.cpp.edu/programs/eng/civil-engineering/civil-engineering-general.shtml",
+    "description": "Design the infrastructure of a modern society, including buildings, traffic control, and water resources. Build a strong foundation in structural analysis, materials science, fluid mechanics and more as you join one of the largest undergraduate civil engineering programs in the United States. With a broad general civil engineering education, small class sizes, and technical electives in structural, transportation, environmental and geotechnical engineering, you can lay the groundwork for your dream career."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Civil Engineering",
+    "major": "Geospatial Engineering",
+    "url": "https://www.cpp.edu/programs/eng/civil-engineering/geospatial.shtml",
+    "description": "Play an instrumental role in the critical field of land management and development. Build upon your education in civil engineering with courses in surveying, remote sensing, photogrammetry, geographical information systems and global positioning systems. Lay the groundwork for your dream career as a licensed civil engineer, land surveyor or land development engineer."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Civil Engineering",
+    "major": "Construction Engineering and Management",
+    "url": "https://www.cpp.edu/programs/eng/civil-engineering/construction-engineering-and-management.shtml",
+    "description": "Become a powerhouse of the construction industry by combining business and civil engineering. Build a strong foundation in subjects such as structural engineering, project management and cost estimation. As a Construction Engineering and Management graduate, you will work with all areas of the industry including developers, architects, building departments, contractors and more. Through our numerous hands-on lab courses and classes focused on practical applications you will be well-prepared for your dream career in commercial, heavy-civil or residential construction."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Electrical and Computer Engeering",
+    "major": "Computer Engineering",
+    "url": "https://www.cpp.edu/programs/eng/electrical-and-computer-engineering/computer-engineering.shtml",
+    "description": "Channel your passion for technology into solutions for an increasingly computerized world. Apply theories and principles of physics and mathematics to the study of circuits, electronics, software, hardware and digital system design to solve technical problems. With over 15 electrical and computer engineering laboratories, you will gain the hands-on experience needed to achieve your dream career."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Electrical and Computer Engeering",
+    "major": "Electrical Engineering",
+    "url": "https://www.cpp.edu/programs/eng/electrical-and-computer-engineering/electrical-engineering.shtml",
+    "description": "Become a generator of innovation and positively impact the world by designing electrical equipment and systems. Experience our learn by doing education with hands-on study of circuits, electronics, computer software, hardware, control systems and more. Test your own ideas and designs first-hand in our lab courses and interpret results under the mentorship of our experienced faculty. Here, you will develop your technical and communication skills, and gain the experience needed for your dream career in electrical engineering."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Electro-Mechanical Engineering Technology",
+    "major": "Electromechanical Systems Engineering Technology",
+    "url": "https://www.cpp.edu/programs/eng/electromechanical-engineering-technology/emset.shtml",
+    "description": "Become an instrumental member of the engineering field by bridging mechanical and thermofluid systems with electronics and control systems. With an emphasis on applied design, operation, and troubleshooting of electromechanical systems, you will study materials strength, heat transfer, programming, robotics and more on the way to your dream career."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Electro-Mechanical Engineering Technology",
+    "major": "Electronic Systems Engineering Technology",
+    "url": "https://www.cpp.edu/programs/eng/electromechanical-engineering-technology/eset.shtml",
+    "description": "Power the future through studying the ever-evolving world of electronics, computers and communications. Seek to understand digital electronics, computer hardware and software, communications electronics, controls, instrumentation and robotics. Through a strong background in applied science, teamwork and exploration, you will develop the necessary technical and communication skills to be successful in the industry."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Industrial and Manufacturing Engineering",
+    "major": "Industrial Engineering",
+    "url": "https://www.cpp.edu/programs/eng/industrial-and-manufacturing-engineering/industrial-engineering.shtml",
+    "description": "Transform complex systems to make organizations more productive, sustainable and successful. Join systems engineering, operations research, supply chains and logistics, and more to improve processes that include people, technology and resources. In industrial engineering, you will combine the human and technical elements of manufacturing and production."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Industrial and Manufacturing Engineering",
+    "major": "Manufacturing Engineering",
+    "url": "https://www.cpp.edu/programs/eng/industrial-and-manufacturing-engineering/manufacturing-engineering.shtml",
+    "description": "Delve into the study of physics, materials science, thermodynamics and mechanical design to plan, optimize and manage the systems that produce the products we use every day. You will build a solid foundation in production processes, properties of materials, computers and automation, teamwork, and professional communication, then put your skills to the test in our state-of-the-art lab facilities."
+  },
+  {
+    "college": "College of Engineering",
+    "department": "Mechanical Engineering",
+    "major": "Mechanical Engineering",
+    "url": "https://www.cpp.edu/programs/eng/mechanical-engineering/mechanical-engineering.shtml",
+    "description": "Become one of the innovators that create products pivotal to modern society, from combustion engines to HVAC systems. Build a strong foundation in mathematics, pure science, mechanics, machine design, energy systems, fluid flow, heat transfer, and thermodynamics. With small class sizes, hands-on labs, faculty who bring their industry experience to the classroom, and your choice of technical electives, you can shape your coursework toward your dream career and gain the support and skills necessary to get there."
+  },
+  {
+    "college": "College of Environmental Design",
+    "department": "Architecture",
+    "major": "Architecture",
+    "url": "https://www.cpp.edu/programs/env/architecture/architecture.shtml",
+    "description": "Design and shape the world around you, while also learning about the people, places, programs, and purposes of buildings and human environments. You will become an innovative problem solver and build skills in a broad spectrum of visual communication tools and methods, design technologies, and design information management."
+  },
+  {
+    "college": "College of Environmental Design",
+    "department": "Art",
+    "major": "Art History",
+    "url": "https://www.cpp.edu/programs/env/art/art-history.shtml",
+    "description": "Explore the artistic legacies of historical periods, regions and cultural traditions worldwide. In Art History, you will immerse yourself in the study of production, reception and experience of art, architecture, design, mass media and other artifacts. Our program provides the flexibility to choose electives in a series of disciplines to shape your degree to your career goals."
+  },
+  {
+    "college": "College of Environmental Design",
+    "department": "Art",
+    "major": "Visual Communication DesignA.",
+    "url": "https://www.cpp.edu/programs/env/art/visual-communication-design.shtml",
+    "description": "Create images that inform, persuade and inspire while considering the physical, cultural, societal, and technological implications of your work. You’ll gain the skills to design across multiple mediums and build a portfolio that reflects both your creativity and technical expertise. Through hands-on projects and industry connections, you’ll graduate prepared to make a meaningful impact in the design world."
+  },
+  {
+    "college": "College of Environmental Design",
+    "department": "Landscape Architecture",
+    "major": "Landscape Architecture",
+    "url": "https://www.cpp.edu/programs/env/landscape-architecture/landscape-architecture.shtml",
+    "description": "Positively impact the lives of people and their environment. Restore wetlands, create habitats for endangered species, grow food, organize creative play, and even remove toxins from rainwater. Landscape Architecture happens at the intersection of environmental science, art, and ecology. It uses expertise in human and ecological health, beauty, and culture to combine engineering, entrepreneurship, and design."
+  },
+  {
+    "college": "College of Environmental Design",
+    "department": "Urban and Regional Planning",
+    "major": "Community Development and Social Justice",
+    "url": "https://www.cpp.edu/programs/env/urp/community-development-social-justice.shtml",
+    "description": "Make a transformational impact in housing and public space and placemaking, contributing to equitable (re)development of cities and regions. By combining classroom and community-based learning activities, you will gain practical knowledge of the history, theories, and methods (analytical and engagement) that will help you work more ethically and efficiently in complex and sometimes contentious professional and political settings."
+  },
+  {
+    "college": "College of Environmental Design",
+    "department": "Urban and Regional Planning",
+    "major": "Infrastructure and Transportation",
+    "url": "https://www.cpp.edu/programs/env/urp/infrastructure-transportation.shtml",
+    "description": "Develop the physical and organizational backbone needed to keep cities functioning. This option covers all infrastructure important to shaping the built environment, transportation, power, drinking water, and more. Gain knowledge about infrastructure from various perspectives, including policy, analytic methods applied to infrastructure planning and operations, the relationship between infrastructure and land use, providers and their regulation, modes of transportation, innovation, and equity."
+  },
+  {
+    "college": "College of Environmental Design",
+    "department": "Urban and Regional Planning",
+    "major": "Resiliency, Sustainability and the Environment",
+    "url": "https://www.cpp.edu/programs/env/urp/resiliency-sustainability-environment.shtml",
+    "description": "Become a steward of sustainable communities and equip regions with strategies to adapt to environmental change. This option integrates science, environmental ethics and policy to address a wide variety of environmental issues. Environmental planning involves ethical and value judgments and planning processes that address uncertainty in natural and social systems. Topics range from local ecosystems to global climate change."
+  },
+  {
+    "college": "College of Environmental Design",
+    "department": "Urban and Regional Planning",
+    "major": "Urban Design",
+    "url": "https://www.cpp.edu/programs/env/urp/urban-design.shtml",
+    "description": "Improve the well-being of communities by creating inviting, functional public spaces. The urban design option is designed to explore ideas around placemaking, tools, and techniques that make cities beautiful, livable, and meaningful to their inhabitants."
+  },
+  {
+    "college": "College of Science",
+    "department": "Biological Sciences",
+    "major": "Biology",
+    "url": "https://www.cpp.edu/programs/sci/biological-sciences/biology.shtml",
+    "description": "The Biology program provides students with a broad view of biological processes, a strong theoretical foundation paired with extensive hands-on experiences in diverse labs. Choose from emphases in Botany, Cell and Molecular Biology, Microbiology, Neuroscience and Physiology, or Zoology."
+  },
+  {
+    "college": "College of Science",
+    "department": "Biological Sciences",
+    "major": "Biotechnology",
+    "url": "https://www.cpp.edu/programs/sci/biological-sciences/biotechnology.shtml",
+    "description": "The Biotechnology major is an interdisciplinary program which provides students with a strong background in both biology and chemistry. It provides the theoretical and practical knowledge needed to understand the numerous industrial applications of biological phenomena, while emphasizing the study of cell and molecular biology. Choose from emphasis in: cellular, molecular, and microbial biology; physiology; biochemistry and molecular separation techniques; food, agriculture, and environment; and policy and business."
+  },
+  {
+    "college": "College of Science",
+    "department": "Biological Sciences",
+    "major": "Environmental Biology",
+    "url": "https://www.cpp.edu/programs/sci/biological-sciences/environmental-biology.shtml",
+    "description": "The Environmental Biology program emphasizes hands-on learning of biodiversity conservation and other important environmental issues affecting the planet and human societies. Students are exposed to comprehensive training through two program emphases: Ecology, Conservation and Biodiversity or Environmental Microbiology. This program also has a strong field component including courses and professional internships throughout the region."
+  },
+  {
+    "college": "College of Science",
+    "department": "Chemistry and Biochemistry",
+    "major": "American Chemical Society",
+    "url": "https://www.cpp.edu/programs/sci/chemistry-and-biochemistry/american-chemical-society.shtml",
+    "description": "Understand the building blocks of the universe through the intersection of chemistry and physics. You will engage in broad, advanced study of many areas of chemistry including general, organic, physical, inorganic and chemical analysis. Link theory with practice as you work side-by-side with experienced faculty in our state-of-the-art laboratory facilities. With the American Chemical Society emphasis, you will be prepared for your dream career in research, industry or graduate studies."
+  },
+  {
+    "college": "College of Science",
+    "department": "Chemistry and Biochemistry",
+    "major": "Biochemistry",
+    "url": "https://www.cpp.edu/programs/sci/chemistry-and-biochemistry/biochemistry.shtml",
+    "description": "Transform the way you see the world at the molecular level. Investigate chemical processes within living organisms and bridge chemistry and life sciences with courses in molecular biology, enzymology, and metabolic pathways. Get real-world training in techniques used to study biochemical processes through extensive experience in our labs. Understand and manipulate biochemical systems and graduate ready to take on groundbreaking careers in pharmaceuticals, biotechnology, and medical research."
+  },
+  {
+    "college": "College of Science",
+    "department": "Chemistry and Biochemistry",
+    "major": "Chemistry",
+    "url": "https://www.cpp.edu/programs/sci/chemistry-and-biochemistry/chemistry.shtml",
+    "description": "Be on the cutting edge of exciting discoveries and understand the world at its most basic levels. Experience theoretical, practical, and experimental training as you explore atoms, biomolecules, chemical reactions and the composition of matter. Link theory with hands-on experience as you work alongside faculty in our state-of-the-art laboratories. Through our American Chemical Society, Biochemistry and General options, you can refine the elements of your coursework to match your dream career."
+  },
+  {
+    "college": "College of Science",
+    "department": "Computer Science",
+    "major": "Computer Science",
+    "url": "https://www.cpp.edu/programs/sci/computer-science/computer-science.shtml",
+    "description": "Are you eager to develop software for cybersecurity, build software simulators for the next generation of network processors or design and implement 3D games? In our Computer Science program, we provide you with the tools to get there. You will engage in a dynamic curriculum and learn to design, build, and implement computer software from the ground up. With project-oriented coursework and real-world experience, you will graduate as an in-demand professional."
+  },
+  {
+    "college": "College of Science",
+    "department": "Geological Sciences",
+    "major": "Geology",
+    "url": "https://www.cpp.edu/programs/sci/geological-sciences/geology.shtml",
+    "description": "We combine classroom learning, hands-on laboratory work and field experiences with industry-standard equipment to explore the Geosciences. Our students engage in research under the guidance of faculty mentors and develop critical problem-solving skills needed to address global challenges such as water resource management, environmental analysis, natural hazard mitigation and sustainable energy development."
+  },
+  {
+    "college": "College of Science",
+    "department": "Kinesiology & Health Promotion",
+    "major": "Kinesiology",
+    "url": "https://www.cpp.edu/programs/sci/kinesiology/kinesiology-general.shtml",
+    "description": "Jump into the study of human movement, health and wellness as you learn about physical activity, exercise and rehabilitation. With biomechanics, exercise science and molecular exercise physiology laboratories, you can learn by doing while serving the community. Through our options in Exercise Science, Public Health and Sport and Social Justice, you can tailor your education to your dream career."
+  },
+  {
+    "college": "College of Science",
+    "department": "Kinesiology & Health Promotion",
+    "major": "Physical Education Teacher Education",
+    "url": "https://www.cpp.edu/programs/sci/kinesiology/kinesiology-pete.shtml",
+    "description": "Put your passion for fitness and sports into action while providing youth with healthy exercise habits and teamwork skills they will carry with them for the rest of their lives. Encourage healthy living and make a meaningful and lasting difference. Prepare for teaching credential programs and careers in physical education from elementary to high school."
+  },
+  {
+    "college": "College of Science",
+    "department": "Mathematics and Statistics",
+    "major": "Applied Mathematics/Statistics",
+    "url": "https://www.cpp.edu/programs/sci/mathematics-and-statistics/applied-mathematics-and-statistics.shtml",
+    "description": "Extend your knowledge and impact as you study mathematical, statistical, computational and modeling methods to solve real-world issues across industries like engineering, finance, health and technology. With the applied mathematics / statistics program emphasis, you will find extensive opportunities to make a difference in others’ lives."
+  },
+  {
+    "college": "College of Science",
+    "department": "Mathematics and Statistics",
+    "major": "Secondary Teacher Preparation/Pure Mathematics",
+    "url": "https://www.cpp.edu/programs/sci/mathematics-and-statistics/secondary-teacher-preparation-pure-mathematics.shtml",
+    "description": "Add value to students’ lives and integrate your learnings into a classroom setting as you prepare to become a middle or high school math teacher, or delve into the theory and proofs behind pure mathematics. With the program emphasis in secondary teacher preparation / pure mathematics, you can make an often-intimidating field accessible and provide students with problem-solving skills they can use for the rest of their lives, or strive to extend our knowledge of fundamental mathematics."
+  },
+  {
+    "college": "College of Science",
+    "department": "Physics and Astronomy",
+    "major": "Biophysics",
+    "url": "https://www.cpp.edu/programs/sci/physics/biophysics.shtml",
+    "description": "Contribute to transformational medical and technological advancements at the intersection of physics and biology. The Biophysics option provides multidisciplinary preparation to apply physical principles to biological and medical problems, including basic and applied research, careers in biomedical and biotechnology industries, professional studies for clinical careers, and science education."
+  },
+  {
+    "college": "College of Science",
+    "department": "Physics and Astronomy",
+    "major": "Physics",
+    "url": "https://www.cpp.edu/programs/sci/physics/general-physics.shtml",
+    "description": "Explore everything from classical mechanics to interstellar processes. The General Physics option provides a comprehensive education in physics and its applications. Choose from Astrophysics or General emphasis to tailor your courses to your interests and career goals. Theory classes are balanced with labs and activities, allowing you to demonstrate your knowledge and gain hands-on experience throughout your coursework."
+  },
+  {
+    "college": "College of Science",
+    "department": "Physics and Astronomy",
+    "major": "Integrated Science",
+    "url": "https://www.cpp.edu/programs/sci/physics/integrated-science.shtml",
+    "description": "Prepare to share your passion for physics with young learners or nurture your interests in the other natural sciences. The Integrated Science option provides a balance of in-depth physics knowledge and quantitative skills with a broad education in the other branches of natural science, the history and nature of science, and strong communication skills for various careers in education and education policy."
+  },
+  {
+    "college": "Education and Integrative Studies",
+    "department": "Early Childhood Studies",
+    "major": "Early Childhood Teaching",
+    "url": "https://www.cpp.edu/programs/ceis/early-childhood-studies/early-childhood-teaching.shtml",
+    "description": "Become an impactful educator in the lives of young children as you help them develop foundational skills, foster positive relationships, and discover a love of learning that will support them for the rest of their lives. Through your influence, children can learn to be resilient, welcome and persist in problem-solving, resolve conflict, and develop an early appreciation for inquiry-based learning."
+  },
+  {
+    "college": "Education and Integrative Studies",
+    "department": "Early Childhood Studies",
+    "major": "Integrated Teacher Education Program Education Specialist: Extensive Support Needs",
+    "url": "https://www.cpp.edu/programs/ceis/early-childhood-studies/itep-extensive-support.shtml",
+    "description": "Become an advocate for all children as you provide them with the tools and support they need to thrive and foster inclusive environments where every child can succeed. This intensive program allows you to receive a Bachelor of Arts in Early Childhood Studies and a credential in Special Education in four years. This option is for those interested in working with special education children in extensive support classrooms."
+  },
+  {
+    "college": "Education and Integrative Studies",
+    "department": "Early Childhood Studies",
+    "major": "Integrated Teacher Education Program Education Specialist: Mild to Moderate Support Needs",
+    "url": "https://www.cpp.edu/programs/ceis/early-childhood-studies/itep-mild-moderate.shtml",
+    "description": "Create and nurture inclusive environments where every child feels valued and empowered, ensuring that each one has the opportunity to succeed and reach their full potential. This program allows you to get your Bachelor of Arts in Early Childhood Studies and credential in Special Education in four years. This option is for those interested in working with special education children in mild to moderate classrooms."
+  },
+  {
+    "college": "Education and Integrative Studies",
+    "department": "Early Childhood Studies",
+    "major": "Multilingual Teaching",
+    "url": "https://www.cpp.edu/programs/ceis/early-childhood-studies/ecs-multilingual-teaching.shtml",
+    "description": "Translate your passion for language and serving diverse students into a career in multilingual education for young children. The Multilingual Teaching option is one of the few programs in higher education that provides this unique training. You will be prepared to enter a growing field and connect students with language and culture through immersive instruction."
+  },
+  {
+    "college": "Education and Integrative Studies",
+    "department": "Early Childhood Studies",
+    "major": "Non-Teaching",
+    "url": "https://www.cpp.edu/programs/ceis/early-childhood-studies/non-teaching.shtml",
+    "description": "Make a transformational impact on young children and families in diverse contexts beyond the classroom. Prepare for careers in social work, child life, school psychology, counseling and therapy, foster care, advocacy and more. The Non-Teaching pathway gives you the flexibility to choose courses within our department to tailor your education to your desired career path."
+  },
+  {
+    "college": "Education and Integrative Studies",
+    "department": "Early Childhood Studies",
+    "major": "Pre-K to Grade 3",
+    "url": "https://www.cpp.edu/programs/ceis/early-childhood-studies/prek-grade3.shtml",
+    "description": "Change the lives of some of the youngest learners by helping them grow in their foundational skills, including relationship development, problem solving, conflict resolution, and inquiry and exploration. The Pre-K to Grade 3 option allows transfer students to obtain the competencies to become transitional kindergarten (TK) teachers. You will receive a combination of teacher preparation and early childhood development coursework. This option is specifically for ADT elementary teacher education transfers."
+  },
+  {
+    "college": "Education and Integrative Studies",
+    "department": "Liberal Studies",
+    "major": "Liberal Studies",
+    "url": "https://www.cpp.edu/programs/ceis/liberal-studies/general-studies.shtml",
+    "description": "Are you trying to decide between your many interests? Here, you won’t have to. Pursue interdisciplinary knowledge as you explore various subjects, from arts and humanities to math and natural sciences. With the General Studies pathway, you will create your own degree to reach your dream profession, whether graduate school or a career in the nonprofit, corporate, public health or education sectors."
+  },
+  {
+    "college": "Education and Integrative Studies",
+    "department": "Liberal Studies",
+    "major": "Integrated Teacher Education Program Education Specialist: Extensive Support Needs",
+    "url": "https://www.cpp.edu/programs/ceis/liberal-studies/itep-extensive-support.shtml",
+    "description": "Foster inclusive learning environments where every child can succeed. Through a mix of liberal studies and special education, you will learn how to support children with diverse needs. In the ITEP Extensive Support option, you will take ten core liberal studies courses, then add to your base knowledge with classes in special education and clinical practice in an extensive support classroom."
+  },
+  {
+    "college": "Education and Integrative Studies",
+    "department": "Liberal Studies",
+    "major": "Integrated Teacher Education Program Education Specialist: Mild to Moderate Support Needs",
+    "url": "https://www.cpp.edu/programs/ceis/liberal-studies/itep-mm-support.shtml",
+    "description": "Provide the tools and support that all children need to thrive. Combine liberal studies and special education as you gain the skills to teach children with diverse learning needs. In the ITEP Mild/Moderate Support option, you will take ten core liberal studies courses, then add to your base knowledge with classes in special education and clinical practice in a mild to moderate support classroom."
+  },
+  {
+    "college": "Education and Integrative Studies",
+    "department": "Liberal Studies",
+    "major": "Liberal Studies - Pre-Credential",
+    "url": "https://www.cpp.edu/programs/ceis/liberal-studies/pre-credential.shtml",
+    "description": "Pursue your passion for teaching and shaping young minds with an interdisciplinary liberal arts education. Help children develop foundational skills and a love of learning that will support them for the rest of their lives. Build the skills, knowledge and disposition to work with children from kindergarten to grade 8 and graduate ready to take on a credential program."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Anthropology and Geography",
+    "major": "Applied Anthropology",
+    "url": "https://www.cpp.edu/programs/class/geography-and-anthropology/applied-anthropology.shtml",
+    "description": "Develop a broad understanding of human diversity, then use it to make an impact on the world. The applied anthropology option combines a strong foundation in anthropological theory with practical training in research methods and cultural analysis, preparing you to approach social issues by analyzing human behavior, translating insights into solutions and communicating with various communities effectively."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Anthropology and Geography",
+    "major": "Archaeology",
+    "url": "https://www.cpp.edu/programs/class/geography-and-anthropology/archaeology.shtml",
+    "description": "Discover the ancient world through archaeology, the study of human history and cultures through material remains. This option provides a strong understanding of the techniques used to uncover and interpret the physical evidence of past cultures and the research and critical thinking skills needed to shape the future. It prepares you for both professional and academic opportunities in archaeology."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Anthropology and Geography",
+    "major": "Anthropology",
+    "url": "https://www.cpp.edu/programs/class/geography-and-anthropology/general-anthropology.shtml",
+    "description": "See the world through a new lens, gaining a deep understanding of humankind, our cultures and our transformation over time. The general anthropology degree provides you with a traditionally broad and generalized \"four-field\" anthropology degree — allowing you to lay the ideal foundation for graduate school or careers in social, governmental, or international service, primary or secondary education, or law."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Anthropology and Geography",
+    "major": "Environmental Studies",
+    "url": "https://www.cpp.edu/programs/class/geography-and-anthropology/environmental-studies.shtml",
+    "description": "Study the relationships between people, places and the natural environment. Be at the forefront of crucial topics like climate change, natural resource management and human geography – the exploration of how people impact and interact with their environment. You will combine scientific analysis with practical skills, preparing to address environmental issues and promote sustainable practices."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Anthropology and Geography",
+    "major": "Geospatial Analysis",
+    "url": "https://www.cpp.edu/programs/class/geography-and-anthropology/geospatial-analysis.shtml",
+    "description": "Manage and interpret geographic data to help institutions better understand our environment through the Geospatial Analysis option. You will learn and develop technical skills, including Geographic Information Systems (GIS) and Remote Sensing software. Graduate prepared for a future dedicated to land-use management, local government and environmental protection."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Communication",
+    "major": "Communication Studies",
+    "url": "https://www.cpp.edu/programs/class/communication/communication-studies.shtml",
+    "description": "Develop key critical analysis skills to solve complex organizational challenges across careers in corporate training, consulting, and organizational development. The program provides a research-based foundation in how communication shapes human interaction across personal, organizational, and cultural contexts. Blending theoretical understanding and practical application, students graduate ready to lead communication initiatives."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Communication",
+    "major": "Multimedia Journalism",
+    "url": "https://www.cpp.edu/programs/class/communication/multimedia-journalism.shtml",
+    "description": "Craft more than messages – share stories that shape communities and change the world. Multimedia journalism prepares you for careers in editorial and supervisory assignments with news organizations, nonprofits, magazines, industrial publications, online and broadcast media. Develop a digital storytelling portfolio while learning essential writing, reporting, video, and multimedia production skills to create compelling content for diverse platforms and audiences."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Communication",
+    "major": "Public Relations",
+    "url": "https://www.cpp.edu/programs/class/communication/public-relations.shtml",
+    "description": "Public relations professionals drive strategic communication between organizations and their stakeholders through campaign development, crisis management, and digital engagement. Our curriculum combines hands-on campaign creation, media relations training, and analytics with industry best practices. You will develop expertise in strategic messaging, stakeholder relationship building, and communication measurement while gaining practical experience through internships and client projects."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Department of Psychology",
+    "major": "Psychology",
+    "url": "https://www.cpp.edu/programs/class/psychology/psychology.shtml",
+    "description": "Change how you engage with the world and seek to understand the complexities of the human experience. Explore the foundations of human behavior by delving into developmental, social, cognitive, clinical, and physiological psychology. You’ll also develop critical skills through direct experience in research methodology and statistics, with opportunities to conduct original research. Whether you’re preparing for graduate school or seeking a career in management, public service, or other fields, this program provides a strong foundation."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Economics",
+    "major": "Applied Economics",
+    "url": "https://www.cpp.edu/programs/class/economics/applied-economics.shtml",
+    "description": "Cultivate highly sought-after analysis and evaluation skills and become a key asset to any business. The Applied Economics Option provides you with practical knowledge that prepares you for success in the business and government sectors. Through hands-on learning and problem-solving, you will explore how economics shapes industries and policies. Whether you aim to enter the workforce or pursue a master's degree in business or related fields, you'll gain a strong foundation in real-world applications of economics, including money and banking, government regulation of the private sector and economic forecasting."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Economics",
+    "major": "Economics",
+    "url": "https://www.cpp.edu/programs/class/economics/general-economics.shtml",
+    "description": "Develop a versatile and comprehensive foundation in the critical field of economics. Designed to suit various backgrounds and provide the flexibility to explore both applied and theoretical aspects, the General Economics option allows you to tailor your coursework to align with your interests and career goals. Whether continuing your studies or pursuing a career in business, public policy, law or beyond, this program equips you with the tools and perspectives for success."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Economics",
+    "major": "Quantitative Economics",
+    "url": "https://www.cpp.edu/programs/class/economics/quantitative-economics.shtml",
+    "description": "Channel your passion for mathematics into the intellectually stimulating pursuit of applying economic theory. The Quantitative Economics option is designed for students with a strong foundation in mathematics and statistics, offering you a deeper focus on the theoretical and technical aspects of economics. This program prepares you for advanced study in economics or other technical fields like finance, actuarial science, risk analysis and applied statistics. You'll gain the analytical skills and expertise needed for careers in the insurance and finance industries, positioning yourself for success in fields that demand a high level of quantitative proficiency."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "English and Modern Languages",
+    "major": "Applied Linguistics",
+    "url": "https://www.cpp.edu/programs/class/eml/english-applied-language-studies.shtml",
+    "description": "Dive into linguistics, the scientific exploration of language and its connection to real-world applications. In the Applied Linguistics option, you will gain the skills needed to help solve language-related issues in fields related to teaching, language learning, language policy, education, communication, media, business, medicine and so much more. You'll progress from introductory concepts to specialized seminar topics, culminating in a capstone project where you will conduct your own independent research on a linguistic topic of your choice."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "English and Modern Languages",
+    "major": "Applied Linguistics (Blended B.A. + M.A. Program)",
+    "url": "https://catalog.cpp.edu/preview_program.php?catoid=69&poid=22066&returnto=5895",
+    "description": "N/A"
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "English and Modern Languages",
+    "major": "English Education",
+    "url": "https://www.cpp.edu/programs/class/eml/english-education.shtml",
+    "description": "Bring stories and prose to life, instilling a love of language, reading and writing in young learners. In the English Education program, you will be equipped with the knowledge and tools needed to become an effective middle or high school English teacher. With abundant learn-by-doing opportunities, this program prepares you for a single-subject teaching credential through a mix of theory and practical classroom experiences – helping you develop the teaching skills necessary to inspire future generations of students."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "English and Modern Languages",
+    "major": "Literary Studies",
+    "url": "https://www.cpp.edu/programs/class/eml/english-literary-studies.shtml",
+    "description": "Immerse yourself in the rich traditions of international literature and channel your passion for cultural touchstones like film and graphic novels. Transform your passion for literature and other cultural texts into a rewarding, hands-on education. With Literary Studies, you’ll explore a wide array of texts across vast eras, geographies and literary movements, all while honing your writing, critical thinking and analytical skills. This program equips you for publishing, media, and writing careers while providing you with a strong foundation for further studies in law, education, or cultural studies."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "English and Modern Languages",
+    "major": "Spanish",
+    "url": "https://www.cpp.edu/programs/class/eml/english-spanish.shtml",
+    "description": "Gain advanced proficiency in Spanish and a deep understanding of the diverse cultural landscape of the Spanish-speaking world. Learn how the Spanish language works, its linguistic diversity, and its role in bilingualism, communication, education, and literacy. Through courses in creative and academic writing, translation, literature, and media, you will develop critical reading, cultural competency, writing, and analytical skills along the way. You will be empowered to connect meaningfully with diverse communities here and abroad in an increasingly interconnected world."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Ethnic and Women's Studies",
+    "major": "Gender, Ethnicity, Multicultural Studies",
+    "url": "https://www.cpp.edu/programs/class/ethnic-and-womens-studies/gender-ethnicity-and-multicultural-studies.shtml",
+    "description": "Dive deep into the nuances of identities, cultures, and histories that shape our world with the Gender, Ethnicity, and Multicultural Studies (GEMS) program. GEMS offers two pathways for exploring critical social issues. The B.A. in GEMS allows you to focus on areas such as African American Studies, Asian Pacific Islander Studies, Chicana/o Latina/o Studies, Native American Studies, or Gender and Sexuality Studies. Our Pre-Credential Option integrates GEMS with educational courses, preparing you for a Multiple Subjects Teaching Credential."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Ethnic and Women's Studies",
+    "major": "Gender, Ethnicity, and Multicultural Studies - Pre-Credential",
+    "url": "https://www.cpp.edu/programs/class/ethnic-and-womens-studies/gender-ethnicity-and-multicultural-studies-pre-credential.shtml",
+    "description": "Are you looking for a path that allows you to inspire young minds while championing diversity and inclusion? Our Gender, Ethnicity, and Multicultural Studies (GEMS) Pre-Credential Option is your key to becoming an educator who makes a difference. This unique program blends cultural studies with hands-on teaching preparation, equipping you to create classrooms where every student feels seen, valued, and empowered."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "History",
+    "major": "History",
+    "url": "https://www.cpp.edu/programs/class/history/general-history.shtml",
+    "description": "Understand the complex relationship between the past and contemporary social, political and cultural issues. Develop your research and analysis skills, build historical arguments, and become a better-informed global citizen. With the General History option, you'll have the freedom to explore your interests or complement your degree with a minor."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "History",
+    "major": "History - Pre-Credential",
+    "url": "https://www.cpp.edu/programs/class/history/pre-credential-history.shtml",
+    "description": "Help future generations better understand the world through sharing our past. With a comprehensive curriculum, you will be introduced to the practice and study of history, learn about a wide range of regions and eras, and dive deep into the content and methods required to engage young minds in the social sciences. You’ll gain the tools and knowledge needed to pursue a teaching credential with confidence, ready to make an impact in the classroom."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Music",
+    "major": "Music",
+    "url": "https://www.cpp.edu/programs/class/music/general.shtml",
+    "description": "Ready to dive into the world of music? With our General Music option, you’ll thrive in a hands-on environment that combines performance, technology and industry knowledge. With expert faculty guiding you, you’ll explore everything from music theory and history to the latest trends, all while developing your artistic and professional potential. This option allows you to gain a solid foundation while having the freedom to explore interdisciplinary studies."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Music",
+    "major": "Music Industry Studies",
+    "url": "https://www.cpp.edu/programs/class/music/industry-studies.shtml",
+    "description": "Ready to turn your love for music into a career? Our Music Industry Studies option will give you a behind-the-scenes look at the music business, from the tech side of production to the marketing and management that drives the industry. Learn how to create and perform music while exploring the economics, culture and legal aspects of the music world. Get real-world experience through internships and collaborations with professionals in the Los Angeles music scene."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Music",
+    "major": "Composition",
+    "url": "https://www.cpp.edu/programs/class/music/composition.shtml",
+    "description": "Ready to turn your musical ideas into masterpieces? The Music Composition option is your launchpad to a career in creating original music. You’ll study diverse compositional techniques, orchestration and contemporary music practices while using advanced technology to craft original works. You’ll collaborate with peers and have your pieces performed by talented ensembles, gaining the experience you need to thrive as a composer or arranger."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Music",
+    "major": "Music Education Pre-credential",
+    "url": "https://www.cpp.edu/programs/class/music/pedagogy.shtml",
+    "description": "Ready to educate the next generation of great musicians? Our Pedagogy (Pre-Credential) program prepares you to teach music in schools, giving you the skills to inspire future musicians. You’ll learn the theory and techniques of effective teaching while gaining hands-on experience. This program also sets you up to meet the “Subject Matter Competency” requirement for a Single Subject Credential in Music, so you’re ready to lead your own music classroom."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Music",
+    "major": "Pedagogy (Pre-credential)",
+    "url": "https://www.cpp.edu/programs/class/music/pedagogy.shtml",
+    "description": "Ready to educate the next generation of great musicians? Our Pedagogy (Pre-Credential) program prepares you to teach music in schools, giving you the skills to inspire future musicians. You’ll learn the theory and techniques of effective teaching while gaining hands-on experience. This program also sets you up to meet the “Subject Matter Competency” requirement for a Single Subject Credential in Music, so you’re ready to lead your own music classroom."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Music",
+    "major": "Performance",
+    "url": "https://www.cpp.edu/programs/class/music/performance.shtml",
+    "description": "Ready to take your music skills to the next level and make a name for yourself in the world of performance? Our Music Performance option will help you fine-tune your technical skills while developing your unique artistic voice. Whether you specialize in guitar, keyboard, classical instruments, voice, or commercial music, you’ll have plenty of opportunities to perform solo and with ensembles, pushing your limits and gaining hands-on experience."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Philosophy",
+    "major": "Philosophy",
+    "url": "https://www.cpp.edu/programs/class/philosophy/general.shtml",
+    "description": "Ready to sharpen your mind and tackle the toughest questions? The General Philosophy option will challenge you to think deeply and critically, teaching you to break down complex ideas and connect concepts across various fields. You’ll explore the big picture, combining logic, ethics, and reasoning to form well-rounded perspectives that can be applied to everything from science and technology to media and beyond."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Philosophy",
+    "major": "Law and Society",
+    "url": "https://www.cpp.edu/programs/class/philosophy/law-and-society.shtml",
+    "description": "Interested in making a tangible impact on society? The Law and Society option blends deep philosophical thinking with hands-on problem-solving, focusing on the ethical, social and political issues that shape our world. You’ll dive into the complexities of law and justice, learning to analyze legal concepts and tackle societal challenges with both reason and compassion."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Philosophy",
+    "major": "Artificial Intelligence Ethics and Society",
+    "url": "https://www.cpp.edu/programs/class/philosophy/science-technology-society.shtml",
+    "description": "Tackle the biggest questions at the intersection of science, technology, and society. The Science, Technology, and Society (STS) program brings together natural sciences, tech, humanities and social sciences to explore how these fields shape and are shaped by the world around us. Investigate the impacts of scientific breakthroughs and tech innovations on cultures and communities, learning to solve real-world problems with a blend of history, ethics and critical thinking."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Philosophy",
+    "major": "Science, Technology and Society",
+    "url": "https://www.cpp.edu/programs/class/philosophy/science-technology-society.shtml",
+    "description": "Tackle the biggest questions at the intersection of science, technology, and society. The Science, Technology, and Society (STS) program brings together natural sciences, tech, humanities and social sciences to explore how these fields shape and are shaped by the world around us. Investigate the impacts of scientific breakthroughs and tech innovations on cultures and communities, learning to solve real-world problems with a blend of history, ethics and critical thinking."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Political Science",
+    "major": "Political Science",
+    "url": "https://www.cpp.edu/programs/class/political-science/political-science.shtml",
+    "description": "Become a changemaker and develop a robust understanding of everything from American government to global diplomacy and public law to political theory. You’ll learn how policies are made, how governments function, and how you can impact the world. With small class sizes and a focus on hands-on learning, you’ll build the critical thinking, research, and communication skills needed to thrive in politics, diplomacy, social justice, law, and beyond."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Sociology",
+    "major": "Criminology",
+    "url": "https://www.cpp.edu/programs/class/sociology/criminology.shtml",
+    "description": "Explore the social and institutional factors that shape crime and the criminal justice system. Prepare for careers in public policy, crime prevention, law enforcement and the judicial system through research, data analysis and critical thinking. For students interested in forensics, pair your criminology degree with a minor in Biology or Chemistry to obtain essential technical skills and lab experience."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Sociology",
+    "major": "Sociology",
+    "url": "https://www.cpp.edu/programs/class/sociology/general.shtml",
+    "description": "Gain a solid foundation in classic and contemporary sociological theories and investigate the structure of groups, organizations, and societies and how people interact within these contexts. The General Sociology option lays the groundwork for you to pursue grad school in a variety of focuses like law or public administration or jump into careers in social services, public policy, or business."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Sociology",
+    "major": "Social Work",
+    "url": "https://www.cpp.edu/programs/class/sociology/social-work.shtml",
+    "description": "Do you dream of making a real impact on people’s lives and strengthening communities? Our Social Work Option combines the power of sociology with practical tools to help you do just that. You’ll dive into important real-world issues like mental health, child welfare and elder care and gain valuable hands-on experience to prepare you for graduate school or a rewarding career in social services."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Theatre and New Dance",
+    "major": "Acting",
+    "url": "https://www.cpp.edu/programs/class/theatre-and-new-dance/acting.shtml",
+    "description": "Bring characters to life, explore the depths of human emotion and explore the craft of storytelling through your body, voice and presence. Graduate with the skills to captivate an audience, evoke empathy and transform any script into a living, breathing experience."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Theatre and New Dance",
+    "major": "Dance Theatre",
+    "url": "https://www.cpp.edu/programs/class/theatre-and-new-dance/dance-theatre.shtml",
+    "description": "Use movement and musicality to convey emotion and make larger statements about life, culture and society. Learn the history of dance and adopt a more global perspective of the art. With practice across forms and styles of dance, as well as technical skills in theatre, you will gain a comprehensive education that will prepare you for a career as a performer or versatile professional in the entertainment industry."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Theatre and New Dance",
+    "major": "Design and Technical Production",
+    "url": "https://www.cpp.edu/programs/class/theatre-and-new-dance/design-and-technical-production.shtml",
+    "description": "Feel the energy of the stage at your fingertips as you experiment with technological advancements in design and technical production. Build a comprehensive foundation of production principles, then examine and apply modern approaches. With our emphasis on the “doing” of theatre, you will develop a robust portfolio you can be proud of."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Theatre and New Dance",
+    "major": "Theatre",
+    "url": "https://www.cpp.edu/programs/class/theatre-and-new-dance/general-theatre.shtml",
+    "description": "Peel back the curtain and immerse yourself in all that a theatre degree has to offer. In the General Theatre option, you will experience our broad curriculum and have the ability to dive deeper into your area of interest, including directing, playwriting, management or theory and criticism. Tailor your education to your career goals and develop the skills to make an impact in the performing arts industry."
+  },
+  {
+    "college": "Letters, Arts, and Social Sciences",
+    "department": "Theatre and New Dance",
+    "major": "Theatre in Education and Community Engagement",
+    "url": "https://www.cpp.edu/programs/class/theatre-and-new-dance/theatre-in-education-and-community-engagement.shtml",
+    "description": "Use the art of performance as a powerful tool for social change, personal growth and community building. Discover how to craft stories that engage, inspire and challenge audiences. Whether facilitating workshops, creating educational theatre or leading community-based projects, you’ll gain the skills to connect with people, spark dialogue, and empower others through the transformative power of theatre."
+  },
+  {
+    "college": "The Collins College of Hospitality Management",
+    "department": "Hotel and Restaurant Management",
+    "major": "Hospitality Management",
+    "url": "https://www.cpp.edu/programs/collins/collins-program-page.shtml",
+    "description": "In our hospitality management program, you’ll learn what it takes to run everything from restaurants to resorts to global events and entertainment companies. With hands-on experiences and mentoring by industry leaders, you’ll develop analytical, marketing, human resources, teamwork and service excellence — and graduate career-ready, confident and ready to lead life’s most exciting moments."
+  }
+]
