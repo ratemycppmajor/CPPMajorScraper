@@ -1,0 +1,72 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model College {
+  id          String        @id @default(cuid())
+  name        String         @unique
+  departments Department[]
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+}
+
+model Department {
+  id          String     @id @default(cuid())
+  name        String
+  collegeId   String
+  college     College    @relation(fields: [collegeId], references: [id], onDelete: Cascade)
+  majors      Major[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+ 
+  @@unique([name, collegeId]) 
+}
+ 
+model Major {
+  id          String     @id @default(cuid())
+  name        String
+  url         String?
+  description String?
+  departmentId String
+  department  Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  reviews     Review[]
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+ 
+  @@unique([name, departmentId])
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  rating    Int
+  comment   String?
+  createdAt DateTime @default(now())
+  userId    String
+  majorId   String
+ 
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  major Major @relation(fields: [majorId], references: [id], onDelete: Cascade)
+ 
+  @@map("reviews")
+}
+
+model User {
+  id            	 String    @id @default(cuid())
+  name          	 String?
+  email		 String?   @unique
+  emailVerified DateTime? @map("email_verified")
+  image         	 String?
+  password      	 String?
+  reviews       	 Review[]
+ 
+  @@map("users")
+}
+
+

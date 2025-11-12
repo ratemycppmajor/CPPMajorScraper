@@ -1,5 +1,7 @@
 import puppeteer from "puppeteer";
 import fs from "fs";
+import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
 
 /**
  * Helper function to clean major names based on your rules
@@ -171,9 +173,59 @@ export async function scrapeCPP() {
 
     await browser.close();
 
+    // Step 6: Store results in the database
+    console.log("Saving data to database...");
+
+    for (const entry of results) {
+        const { college, department, major, url, description } = entry;
+
+        // 1. Upsert college
+        const dbCollege = await prisma.college.upsert({
+            where: { name: college },
+            update: {},
+            create: { name: college },
+        });
+
+        // 2. Upsert department
+        const dbDepartment = await prisma.department.upsert({
+            where: {
+                name_collegeId: {
+                    name: department,
+                    collegeId: dbCollege.id,
+                },
+            },
+            update: {},
+            create: {
+                name: department,
+                collegeId: dbCollege.id,
+            },
+        });
+
+        // 3. Upsert major
+        await prisma.major.upsert({
+            where: {
+                name_departmentId: {
+                    name: major,
+                    departmentId: dbDepartment.id,
+                },
+            },
+            update: {
+                url,
+                description,
+            },
+            create: {
+                name: major,
+                url,
+                description,
+                departmentId: dbDepartment.id,
+            },
+        });
+    }
+
+    console.log("Database updated!");
     return results;
 }
 
 scrapeCPP().then(() => {
-    console.log("Scraping complete!");
+    console.log("--- Scraping and enrichment complete! ---");
 });
