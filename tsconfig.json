@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node10",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "ignoreDeprecations": "6.0",
+    "lib": ["esnext", "dom"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
+}

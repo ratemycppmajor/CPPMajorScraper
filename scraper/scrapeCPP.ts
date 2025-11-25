@@ -1,13 +1,16 @@
 import puppeteer from "puppeteer";
 import fs from "fs";
 import { PrismaClient } from "@prisma/client";
+import { parseAvgGPA, calculateAverageGPAForMajor } from "./parseAvgGPA";
 const prisma = new PrismaClient();
+
+
 
 /**
  * Helper function to clean major names based on your rules
  */
-function cleanMajorName(name) {
-    const degreeSuffixRegex = /,\s*B\.[A-Za-z]+\.?/;
+function cleanMajorName(name: string): string {
+    const degreeSuffixRegex = /,\s*[A-Za-z.]+\.?$/;
     const parts = name.split(" - ");
 
     if (parts.length > 1) {
@@ -15,11 +18,18 @@ function cleanMajorName(name) {
         const majorPart = parts[0]; // e.g., "History, B.A."
         const specialization = parts[1].trim() // e.g., "Pre-Credential" or "General Sociology"
 
+        if (specialization.includes("Integrated Teacher Education Program")) {
+            const cleanedMajor = majorPart.replace(degreeSuffixRegex, "").trim();
+            return `${cleanedMajor} ${specialization}`;
+        }
+
         if (specialization === "Pre-Credential") {
             return majorPart.replace(degreeSuffixRegex, "").trim() + " - Pre-Credential"; // ex: "History, B.A. - Pre-Credential" -> "History - Pre-Credential"
-        } else if (specialization.startsWith("General")) {
+        } 
+        else if (specialization.startsWith("General")) {
             return majorPart.replace(degreeSuffixRegex, "").trim(); // ex: "Sociology, B.A. - General Sociology" -> "Sociology"
-        } else {
+        } 
+        else {
             return specialization; // ex: "Music, B.M. - Composition" -> "Composition"
         }
     } else {
@@ -31,7 +41,12 @@ function cleanMajorName(name) {
 /**
  * Manual fallback descriptions for missing major pages
  */
-const FALLBACK_DESCRIPTIONS = {
+interface FallbackDescription {
+    description: string;
+    url: string;
+}
+
+const FALLBACK_DESCRIPTIONS: Record<string, FallbackDescription> = {
     "Materials Engineering": {
         description:
             "Deal with developing products and processes based on understanding the structure of materials. The goal of the materials engineer is to understand the structure of materials (at the micro- or the nano level) to improve their properties and ultimately their performance. Materials engineers apply this knowledge to the production, selection, and utilization of materials. Since engineers are called upon to work with new ideas and materials, the engineering graduate with a minor in Materials Engineering is very well prepared to respond to such a challenge and thus has a career advantage.",
@@ -54,7 +69,7 @@ const FALLBACK_DESCRIPTIONS = {
     },
 };
 
-export async function scrapeCPP() {
+export const scrapeCPP = async() => {
     const browser = await puppeteer.launch({
         headless: true,
     });
@@ -73,20 +88,27 @@ export async function scrapeCPP() {
     const collegesData = await page.evaluate(() => {
         const collegeElements = document.querySelectorAll("div.college");
 
-        return Array.from(collegeElements).map(college => {
-            const collegeHeading = college.querySelector("h2.college-heading").innerText.trim(); // e.g., "College of Agriculture"
+        return Array.from(collegeElements).map((college: Element) => {
+            const collegeHeadingEl = college.querySelector("h2.college-heading");
+            if (!collegeHeadingEl) throw new Error("College heading not found");
+            const collegeHeading = (collegeHeadingEl as HTMLElement).innerText.trim(); // e.g., "College of Agriculture"
             const departmentElements = college.querySelectorAll("div.dept-programs"); // get all the div departments with their programs
 
-            const departments = Array.from(departmentElements).map(dept => {
-                const deptHeading = dept.querySelector("h3.dept-heading").innerText.trim(); // e.g., "Animal and Veterinary Science"
+            const departments = Array.from(departmentElements).map((dept: Element) => {
+                const deptHeadingEl = dept.querySelector("h3.dept-heading");
+                if (!deptHeadingEl) throw new Error("Department heading not found");
+                const deptHeading = (deptHeadingEl as HTMLElement).innerText.trim(); // e.g., "Animal and Veterinary Science"
                 const majorLinks = dept.querySelectorAll(
                     'ul.program-list li span[ng-show="true"] span[ng-show="true"] a.program-link'
                 ); // get all major links
 
-                const majors = Array.from(majorLinks).map(link => ({
-                    name: link.innerText.trim(),
-                    href: link.href,
-                }));
+                const majors = Array.from(majorLinks).map((link: Element) => {
+                    const anchor = link as HTMLAnchorElement;
+                    return {
+                        name: anchor.innerText.trim(),
+                        href: anchor.href,
+                    };
+                });
 
                 return {
                     department: deptHeading,
@@ -102,9 +124,25 @@ export async function scrapeCPP() {
     }); 
 
     // Step 2: Clean and deduplicate program names
-    const cleanedData = [];
+    interface Major {
+        name: string;
+        href: string;
+    }
+
+    interface Department {
+        department: string;
+        majors: Major[];
+    }
+
+    interface College {
+        college: string;
+        departments: Department[];
+    }
+
+    const cleanedData: College[] = [];
+
     for (const college of collegesData) {
-        const departments = [];
+        const departments: Department[] = [];
         for (const dept of college.departments) {
             const cleanedMajors = dept.majors.map(p => ({
                 name: cleanMajorName(p.name),
@@ -113,7 +151,7 @@ export async function scrapeCPP() {
 
             // Deduplicate by name
             const uniqueMajors = Object.values(
-                cleanedMajors.reduce((acc, p) => {
+                cleanedMajors.reduce((acc: Record<string, Major>, p) => {
                     acc[p.name] = p;
                     return acc;
                 }, {})
@@ -124,12 +162,33 @@ export async function scrapeCPP() {
         cleanedData.push({ ...college, departments });
     }
 
+    // Step 2.5: Load GPA data from Excel file
+    console.log("Loading GPA data from Excel file...");
+    let gpaMap: Map<string, number[]>;
+    try {
+        gpaMap = parseAvgGPA("data/avergeGPA.xlsx");
+        console.log("GPA data loaded successfully");
+    } catch (error) {
+        console.warn(`Failed to load GPA data: ${(error as Error).message}`);
+        gpaMap = new Map();
+    }
+
     // Step 3: Visit each major link and extract paragraph
-    const results = [];
+    interface Result {
+        college: string;
+        department: string;
+        major: string;
+        url: string;
+        description: string;
+        averageGpa: number | null;
+    }
+
+    console.log("Scraping major descriptions...");
+    const results: Result[] = [];
     for (const college of cleanedData) {
         for (const dept of college.departments) {
             for (const major of dept.majors) {
-                let description = null;
+                let description: string | null = null;
                 try {
                     const majorPage = await browser.newPage();
                     await majorPage.goto(major.href, { waitUntil: "domcontentloaded", timeout: 20000 });
@@ -139,15 +198,16 @@ export async function scrapeCPP() {
 
                     if (found) {
                         description = await majorPage.$eval(selector, el =>
-                            el.textContent
-                                .replace(/\s+/g, " ")    // Collapse all whitespace/newlines into single spaces
+                            (el.textContent || "")
+                                .replace(/\s+/g, " ")    // collapse all whitespace/newlines into single spaces
                                 .trim()
                         );
                     }
 
                     await majorPage.close();
                 } catch (err) {
-                    console.warn(`⚠️ Failed to fetch ${major.name}: ${err.message}`);
+                    const error = err as Error;
+                    console.warn(`Failed to fetch ${major.name}: ${error.message}`);
                 }
 
                 // Step 4: Use fallback if missing
@@ -156,20 +216,28 @@ export async function scrapeCPP() {
                     major.href = FALLBACK_DESCRIPTIONS[major.name].url || major.href;
                 }
 
+                // Step 4.5: Calculate average GPA for this major
+                const averageGpa = calculateAverageGPAForMajor(major.name, gpaMap);
+
                 results.push({
                     college: college.college,
                     department: dept.department,
                     major: major.name,
                     url: major.href,
                     description: description || "N/A",
+                    averageGpa,
                 });
             }
         }
     }
 
     // Step 5: Save to JSON file
-    fs.writeFileSync("cpp_majors.json", JSON.stringify(results, null, 2));
-    console.log("Data saved to cpp_majors.json");
+    const dataDir = "data";
+    if (!fs.existsSync(dataDir)) {
+        fs.mkdirSync(dataDir, { recursive: true });
+    }
+    fs.writeFileSync(`${dataDir}/cpp_majors.json`, JSON.stringify(results, null, 2));
+    console.log(`Data saved to ${dataDir}/cpp_majors.json`);
 
     await browser.close();
 
@@ -177,16 +245,14 @@ export async function scrapeCPP() {
     console.log("Saving data to database...");
 
     for (const entry of results) {
-        const { college, department, major, url, description } = entry;
+        const { college, department, major, url, description, averageGpa } = entry;
 
-        // 1. Upsert college
         const dbCollege = await prisma.college.upsert({
             where: { name: college },
             update: {},
             create: { name: college },
         });
 
-        // 2. Upsert department
         const dbDepartment = await prisma.department.upsert({
             where: {
                 name_collegeId: {
@@ -201,7 +267,6 @@ export async function scrapeCPP() {
             },
         });
 
-        // 3. Upsert major
         await prisma.major.upsert({
             where: {
                 name_departmentId: {
@@ -212,11 +277,13 @@ export async function scrapeCPP() {
             update: {
                 url,
                 description,
+                averageGpa,
             },
             create: {
                 name: major,
                 url,
                 description,
+                averageGpa,
                 departmentId: dbDepartment.id,
             },
         });
@@ -227,5 +294,5 @@ export async function scrapeCPP() {
 }
 
 scrapeCPP().then(() => {
-    console.log("--- Scraping and enrichment complete! ---");
+    console.log("Scraping complete!");
 });
