@@ -36,8 +36,10 @@ CPPMajorScraper is a scraper and parser that scrapes Cal Poly Pomona Acacdemic P
 ### Built With
 
 * [![TypeScript][TypeScript]][TypeScript-url]
+* [![Puppeteer][Puppeteer]][Puppeteer-url]
 * [![Prisma][Prisma]][Prisma-url]
 * [![Supabase][Supabase]][Supabase-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,6 +91,8 @@ To get a local copy up and running, follow these simple example steps.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [TypeScript]: https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square
 [TypeScript-url]: https://www.typescriptlang.org
+[Puppeteer]: https://img.shields.io/badge/Puppeteer-%2340B5A4.svg?style=for-the-badge&logo=Puppeteer&logoColor=black
+[Puppeteer-url]: https://pptr.dev
 [Prisma]: https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white
 [Prisma-url]: https://www.prisma.io
 [Supabase]: https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white
