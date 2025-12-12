@@ -41,6 +41,7 @@ export type MajorMinAggregateOutputType = {
   description: string | null
   departmentId: string | null
   averageGpa: number | null
+  slug: string | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -52,6 +53,7 @@ export type MajorMaxAggregateOutputType = {
   description: string | null
   departmentId: string | null
   averageGpa: number | null
+  slug: string | null
   createdAt: Date | null
   updatedAt: Date | null
 }
@@ -63,6 +65,7 @@ export type MajorCountAggregateOutputType = {
   description: number
   departmentId: number
   averageGpa: number
+  slug: number
   createdAt: number
   updatedAt: number
   _all: number
@@ -84,6 +87,7 @@ export type MajorMinAggregateInputType = {
   description?: true
   departmentId?: true
   averageGpa?: true
+  slug?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -95,6 +99,7 @@ export type MajorMaxAggregateInputType = {
   description?: true
   departmentId?: true
   averageGpa?: true
+  slug?: true
   createdAt?: true
   updatedAt?: true
 }
@@ -106,6 +111,7 @@ export type MajorCountAggregateInputType = {
   description?: true
   departmentId?: true
   averageGpa?: true
+  slug?: true
   createdAt?: true
   updatedAt?: true
   _all?: true
@@ -204,6 +210,7 @@ export type MajorGroupByOutputType = {
   description: string | null
   departmentId: string
   averageGpa: number | null
+  slug: string
   createdAt: Date
   updatedAt: Date
   _count: MajorCountAggregateOutputType | null
@@ -238,10 +245,11 @@ export type MajorWhereInput = {
   description?: Prisma.StringNullableFilter<"Major"> | string | null
   departmentId?: Prisma.StringFilter<"Major"> | string
   averageGpa?: Prisma.FloatNullableFilter<"Major"> | number | null
+  slug?: Prisma.StringFilter<"Major"> | string
   createdAt?: Prisma.DateTimeFilter<"Major"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Major"> | Date | string
-  department?: Prisma.XOR<Prisma.DepartmentScalarRelationFilter, Prisma.DepartmentWhereInput>
   reviews?: Prisma.ReviewListRelationFilter
+  department?: Prisma.XOR<Prisma.DepartmentScalarRelationFilter, Prisma.DepartmentWhereInput>
 }
 
 export type MajorOrderByWithRelationInput = {
@@ -251,14 +259,16 @@ export type MajorOrderByWithRelationInput = {
   description?: Prisma.SortOrderInput | Prisma.SortOrder
   departmentId?: Prisma.SortOrder
   averageGpa?: Prisma.SortOrderInput | Prisma.SortOrder
+  slug?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
-  department?: Prisma.DepartmentOrderByWithRelationInput
   reviews?: Prisma.ReviewOrderByRelationAggregateInput
+  department?: Prisma.DepartmentOrderByWithRelationInput
 }
 
 export type MajorWhereUniqueInput = Prisma.AtLeast<{
   id?: string
+  slug?: string
   name_departmentId?: Prisma.MajorNameDepartmentIdCompoundUniqueInput
   AND?: Prisma.MajorWhereInput | Prisma.MajorWhereInput[]
   OR?: Prisma.MajorWhereInput[]
@@ -270,9 +280,9 @@ export type MajorWhereUniqueInput = Prisma.AtLeast<{
   averageGpa?: Prisma.FloatNullableFilter<"Major"> | number | null
   createdAt?: Prisma.DateTimeFilter<"Major"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Major"> | Date | string
-  department?: Prisma.XOR<Prisma.DepartmentScalarRelationFilter, Prisma.DepartmentWhereInput>
   reviews?: Prisma.ReviewListRelationFilter
-}, "id" | "name_departmentId">
+  department?: Prisma.XOR<Prisma.DepartmentScalarRelationFilter, Prisma.DepartmentWhereInput>
+}, "id" | "slug" | "name_departmentId">
 
 export type MajorOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
@@ -281,6 +291,7 @@ export type MajorOrderByWithAggregationInput = {
   description?: Prisma.SortOrderInput | Prisma.SortOrder
   departmentId?: Prisma.SortOrder
   averageGpa?: Prisma.SortOrderInput | Prisma.SortOrder
+  slug?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
   _count?: Prisma.MajorCountOrderByAggregateInput
@@ -300,6 +311,7 @@ export type MajorScalarWhereWithAggregatesInput = {
   description?: Prisma.StringNullableWithAggregatesFilter<"Major"> | string | null
   departmentId?: Prisma.StringWithAggregatesFilter<"Major"> | string
   averageGpa?: Prisma.FloatNullableWithAggregatesFilter<"Major"> | number | null
+  slug?: Prisma.StringWithAggregatesFilter<"Major"> | string
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"Major"> | Date | string
   updatedAt?: Prisma.DateTimeWithAggregatesFilter<"Major"> | Date | string
 }
@@ -310,10 +322,11 @@ export type MajorCreateInput = {
   url?: string | null
   description?: string | null
   averageGpa?: number | null
+  slug: string
   createdAt?: Date | string
   updatedAt?: Date | string
-  department: Prisma.DepartmentCreateNestedOneWithoutMajorsInput
   reviews?: Prisma.ReviewCreateNestedManyWithoutMajorInput
+  department: Prisma.DepartmentCreateNestedOneWithoutMajorsInput
 }
 
 export type MajorUncheckedCreateInput = {
@@ -323,6 +336,7 @@ export type MajorUncheckedCreateInput = {
   description?: string | null
   departmentId: string
   averageGpa?: number | null
+  slug: string
   createdAt?: Date | string
   updatedAt?: Date | string
   reviews?: Prisma.ReviewUncheckedCreateNestedManyWithoutMajorInput
@@ -334,10 +348,11 @@ export type MajorUpdateInput = {
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
-  department?: Prisma.DepartmentUpdateOneRequiredWithoutMajorsNestedInput
   reviews?: Prisma.ReviewUpdateManyWithoutMajorNestedInput
+  department?: Prisma.DepartmentUpdateOneRequiredWithoutMajorsNestedInput
 }
 
 export type MajorUncheckedUpdateInput = {
@@ -347,6 +362,7 @@ export type MajorUncheckedUpdateInput = {
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   departmentId?: Prisma.StringFieldUpdateOperationsInput | string
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   reviews?: Prisma.ReviewUncheckedUpdateManyWithoutMajorNestedInput
@@ -359,6 +375,7 @@ export type MajorCreateManyInput = {
   description?: string | null
   departmentId: string
   averageGpa?: number | null
+  slug: string
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -369,6 +386,7 @@ export type MajorUpdateManyMutationInput = {
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -380,6 +398,7 @@ export type MajorUncheckedUpdateManyInput = {
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   departmentId?: Prisma.StringFieldUpdateOperationsInput | string
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -406,6 +425,7 @@ export type MajorCountOrderByAggregateInput = {
   description?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
   averageGpa?: Prisma.SortOrder
+  slug?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -421,6 +441,7 @@ export type MajorMaxOrderByAggregateInput = {
   description?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
   averageGpa?: Prisma.SortOrder
+  slug?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -432,6 +453,7 @@ export type MajorMinOrderByAggregateInput = {
   description?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
   averageGpa?: Prisma.SortOrder
+  slug?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
 }
@@ -519,6 +541,7 @@ export type MajorCreateWithoutDepartmentInput = {
   url?: string | null
   description?: string | null
   averageGpa?: number | null
+  slug: string
   createdAt?: Date | string
   updatedAt?: Date | string
   reviews?: Prisma.ReviewCreateNestedManyWithoutMajorInput
@@ -530,6 +553,7 @@ export type MajorUncheckedCreateWithoutDepartmentInput = {
   url?: string | null
   description?: string | null
   averageGpa?: number | null
+  slug: string
   createdAt?: Date | string
   updatedAt?: Date | string
   reviews?: Prisma.ReviewUncheckedCreateNestedManyWithoutMajorInput
@@ -571,6 +595,7 @@ export type MajorScalarWhereInput = {
   description?: Prisma.StringNullableFilter<"Major"> | string | null
   departmentId?: Prisma.StringFilter<"Major"> | string
   averageGpa?: Prisma.FloatNullableFilter<"Major"> | number | null
+  slug?: Prisma.StringFilter<"Major"> | string
   createdAt?: Prisma.DateTimeFilter<"Major"> | Date | string
   updatedAt?: Prisma.DateTimeFilter<"Major"> | Date | string
 }
@@ -581,6 +606,7 @@ export type MajorCreateWithoutReviewsInput = {
   url?: string | null
   description?: string | null
   averageGpa?: number | null
+  slug: string
   createdAt?: Date | string
   updatedAt?: Date | string
   department: Prisma.DepartmentCreateNestedOneWithoutMajorsInput
@@ -593,6 +619,7 @@ export type MajorUncheckedCreateWithoutReviewsInput = {
   description?: string | null
   departmentId: string
   averageGpa?: number | null
+  slug: string
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -619,6 +646,7 @@ export type MajorUpdateWithoutReviewsInput = {
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   department?: Prisma.DepartmentUpdateOneRequiredWithoutMajorsNestedInput
@@ -631,6 +659,7 @@ export type MajorUncheckedUpdateWithoutReviewsInput = {
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   departmentId?: Prisma.StringFieldUpdateOperationsInput | string
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -641,6 +670,7 @@ export type MajorCreateManyDepartmentInput = {
   url?: string | null
   description?: string | null
   averageGpa?: number | null
+  slug: string
   createdAt?: Date | string
   updatedAt?: Date | string
 }
@@ -651,6 +681,7 @@ export type MajorUpdateWithoutDepartmentInput = {
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   reviews?: Prisma.ReviewUpdateManyWithoutMajorNestedInput
@@ -662,6 +693,7 @@ export type MajorUncheckedUpdateWithoutDepartmentInput = {
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   reviews?: Prisma.ReviewUncheckedUpdateManyWithoutMajorNestedInput
@@ -673,6 +705,7 @@ export type MajorUncheckedUpdateManyWithoutDepartmentInput = {
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
+  slug?: Prisma.StringFieldUpdateOperationsInput | string
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
   updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
 }
@@ -715,10 +748,11 @@ export type MajorSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = 
   description?: boolean
   departmentId?: boolean
   averageGpa?: boolean
+  slug?: boolean
   createdAt?: boolean
   updatedAt?: boolean
-  department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
   reviews?: boolean | Prisma.Major$reviewsArgs<ExtArgs>
+  department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
   _count?: boolean | Prisma.MajorCountOutputTypeDefaultArgs<ExtArgs>
 }, ExtArgs["result"]["major"]>
 
@@ -729,6 +763,7 @@ export type MajorSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensi
   description?: boolean
   departmentId?: boolean
   averageGpa?: boolean
+  slug?: boolean
   createdAt?: boolean
   updatedAt?: boolean
   department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
@@ -741,6 +776,7 @@ export type MajorSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensi
   description?: boolean
   departmentId?: boolean
   averageGpa?: boolean
+  slug?: boolean
   createdAt?: boolean
   updatedAt?: boolean
   department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
@@ -753,14 +789,15 @@ export type MajorSelectScalar = {
   description?: boolean
   departmentId?: boolean
   averageGpa?: boolean
+  slug?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }
 
-export type MajorOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "url" | "description" | "departmentId" | "averageGpa" | "createdAt" | "updatedAt", ExtArgs["result"]["major"]>
+export type MajorOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "url" | "description" | "departmentId" | "averageGpa" | "slug" | "createdAt" | "updatedAt", ExtArgs["result"]["major"]>
 export type MajorInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
-  department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
   reviews?: boolean | Prisma.Major$reviewsArgs<ExtArgs>
+  department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
   _count?: boolean | Prisma.MajorCountOutputTypeDefaultArgs<ExtArgs>
 }
 export type MajorIncludeCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
@@ -773,8 +810,8 @@ export type MajorIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extens
 export type $MajorPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Major"
   objects: {
-    department: Prisma.$DepartmentPayload<ExtArgs>
     reviews: Prisma.$ReviewPayload<ExtArgs>[]
+    department: Prisma.$DepartmentPayload<ExtArgs>
   }
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
@@ -783,6 +820,7 @@ export type $MajorPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs 
     description: string | null
     departmentId: string
     averageGpa: number | null
+    slug: string
     createdAt: Date
     updatedAt: Date
   }, ExtArgs["result"]["major"]>
@@ -1179,8 +1217,8 @@ readonly fields: MajorFieldRefs;
  */
 export interface Prisma__MajorClient<T, Null = never, ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
   readonly [Symbol.toStringTag]: "PrismaPromise"
-  department<T extends Prisma.DepartmentDefaultArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.DepartmentDefaultArgs<ExtArgs>>): Prisma.Prisma__DepartmentClient<runtime.Types.Result.GetResult<Prisma.$DepartmentPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
   reviews<T extends Prisma.Major$reviewsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.Major$reviewsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$ReviewPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+  department<T extends Prisma.DepartmentDefaultArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.DepartmentDefaultArgs<ExtArgs>>): Prisma.Prisma__DepartmentClient<runtime.Types.Result.GetResult<Prisma.$DepartmentPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
   /**
    * Attaches callbacks for the resolution and/or rejection of the Promise.
    * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -1216,6 +1254,7 @@ export interface MajorFieldRefs {
   readonly description: Prisma.FieldRef<"Major", 'String'>
   readonly departmentId: Prisma.FieldRef<"Major", 'String'>
   readonly averageGpa: Prisma.FieldRef<"Major", 'Float'>
+  readonly slug: Prisma.FieldRef<"Major", 'String'>
   readonly createdAt: Prisma.FieldRef<"Major", 'DateTime'>
   readonly updatedAt: Prisma.FieldRef<"Major", 'DateTime'>
 }

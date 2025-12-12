@@ -102,6 +102,7 @@ export const MajorScalarFieldEnum = {
   description: 'description',
   departmentId: 'departmentId',
   averageGpa: 'averageGpa',
+  slug: 'slug',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 } as const
@@ -126,6 +127,7 @@ export const UserScalarFieldEnum = {
   name: 'name',
   email: 'email',
   emailVerified: 'emailVerified',
+  studentVerified: 'studentVerified',
   image: 'image',
   password: 'password'
 } as const

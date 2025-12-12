@@ -34,11 +34,13 @@ model Major {
   description  String?
   departmentId String
   averageGpa   Float?
+  slug         String     @unique
   createdAt    DateTime   @default(now())
   updatedAt    DateTime   @updatedAt
-  department   Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
   reviews      Review[]
 
+  department   Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  
   @@unique([name, departmentId])
 }
 
@@ -56,13 +58,14 @@ model Review {
 }
 
 model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime? @map("email_verified")
-  image         String?
-  password      String?
-  reviews       Review[]
+  id              String    @id @default(cuid())
+  name            String?
+  email           String?   @unique
+  emailVerified   DateTime? @map("email_verified")
+  studentVerified Boolean   @default(false) @map("student_verified")
+  image           String?
+  password        String?
+  reviews         Review[]
 
   @@map("users")
 }
