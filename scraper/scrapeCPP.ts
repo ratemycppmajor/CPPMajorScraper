@@ -44,7 +44,38 @@ function cleanMajorName(name: string): string {
 }
 
 /**
- * Manual fallback descriptions for missing major pages
+ * Helper functions to slugify major names 
+ */
+const autoSlugify = (str: string) =>
+  str
+    .toLowerCase()
+    .replace(/[\s\/:,().]+/g, "-") // spaces + special chars -> dash
+    .replace(/and/g, "")           // remove "and" for cleaner URLs
+    .replace(/-+/g, "-")           // collapse repeated ---
+    .replace(/^-|-$/g, "");        // trim leading/trailing "-"
+
+
+function slugify(text: string): string {
+    if(SPECIAL_MAJOR_SLUGS[text]) {
+        return SPECIAL_MAJOR_SLUGS[text];
+    }
+
+    return autoSlugify(text);
+}
+
+/**
+ * Special major slugs
+ */
+const SPECIAL_MAJOR_SLUGS: Record<string, string> = {
+    "Early Childhood Studies Integrated Teacher Education Program Education Specialist: Extensive Support Needs" : "ecs-itep-extensive-support",
+    "Early Childhood Studies Integrated Teacher Education Program Education Specialist: Mild to Moderate Support Needs" : "ecs-itep-mm-support",
+    "Liberal Studies Integrated Teacher Education Program Education Specialist: Extensive Support Needs" : "ls-itep-extensive-support",
+    "Liberal Studies Integrated Teacher Education Program Education Specialist: Mild to Moderate Support Needs" : "ls-itep-mm-support",
+    "Applied Linguistics (Blended B.A. + M.A. Program)" : "applied-linguistics-blended-ba-ma"  
+};
+
+/**
+ * Fallback descriptions for missing major pages
  */
 interface FallbackDescription {
     description: string;
@@ -72,6 +103,10 @@ const FALLBACK_DESCRIPTIONS: Record<string, FallbackDescription> = {
             "Address problems raised by AI’s increasingly pervasive influence on society—problems such as algorithmic bias and the question of how to address it; moral and legal responsibility for AI decision making; displacement of a wide range of human jobs from computer coding to truck driving; and the environmental impacts of AI. Effectively addressing these problems requires skill in negotiating competing values and acute sensitivity to the social and cultural contexts in which AI’s harms and benefits arise.",
         url: "https://www.cpp.edu/class/science-technology-society/about-page.shtml#ai-ethics",
     },
+    "Applied Linguistics (Blended B.A. + M.A. Program)": {
+        description: "Dive into linguistics, the scientific exploration of language and its connection to real-world applications. In the Applied Linguistics option, you will gain the skills needed to help solve language-related issues in fields related to teaching, language learning, language policy, education, communication, media, business, medicine and so much more. You'll progress from introductory concepts to specialized seminar topics, culminating in a capstone project where you will conduct your own independent research on a linguistic topic of your choice.",
+        url: "https://catalog.cpp.edu/preview_program.php?catoid=69&poid=22066&returnto=5895"
+    }
 };
 
 export const scrapeCPP = async() => {
@@ -149,15 +184,15 @@ export const scrapeCPP = async() => {
     for (const college of collegesData) {
         const departments: Department[] = [];
         for (const dept of college.departments) {
-            const cleanedMajors = dept.majors.map(p => ({
-                name: cleanMajorName(p.name),
-                href: p.href,
-            }));
+            const cleanedMajors = dept.majors.map(major => ({
+                name: cleanMajorName(major.name),
+                href: major.href,
+            })).filter(major => major.name !== "Music Education Pre-credential");
 
             // Deduplicate by name
             const uniqueMajors = Object.values(
-                cleanedMajors.reduce((acc: Record<string, Major>, p) => {
-                    acc[p.name] = p;
+                cleanedMajors.reduce((acc: Record<string, Major>, major) => {
+                    acc[major.name] = major;
                     return acc;
                 }, {})
             );
@@ -186,6 +221,7 @@ export const scrapeCPP = async() => {
         url: string;
         description: string;
         averageGpa: number | null;
+        slug: string;
     }
 
     console.log("Scraping major descriptions...");
@@ -221,8 +257,9 @@ export const scrapeCPP = async() => {
                     major.href = FALLBACK_DESCRIPTIONS[major.name].url || major.href;
                 }
 
-                // Step 4.5: Calculate average GPA for this major
+                // Step 4.5: Calculate average GPA for this major and slugify major name
                 const averageGpa = calculateAverageGPAForMajor(major.name, gpaMap);
+                const slug = slugify(major.name);
 
                 results.push({
                     college: college.college,
@@ -231,6 +268,7 @@ export const scrapeCPP = async() => {
                     url: major.href,
                     description: description || "N/A",
                     averageGpa,
+                    slug: slug,
                 });
             }
         }
@@ -250,7 +288,7 @@ export const scrapeCPP = async() => {
     console.log("Saving data to database...");
 
     for (const entry of results) {
-        const { college, department, major, url, description, averageGpa } = entry;
+        const { college, department, major, url, description, averageGpa, slug } = entry;
 
         const dbCollege = await prisma.college.upsert({
             where: { name: college },
@@ -289,6 +327,7 @@ export const scrapeCPP = async() => {
                 url,
                 description,
                 averageGpa,
+                slug,
                 departmentId: dbDepartment.id,
             },
         });

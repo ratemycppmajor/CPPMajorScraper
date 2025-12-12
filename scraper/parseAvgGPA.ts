@@ -1,10 +1,5 @@
 import XLSX from "xlsx";
 
-interface GPARecord {
-    majorName: string;
-    averageGPA: number;
-}
-
 /**
  * Reads the Excel file and extracts GPA data
  * @param excelPath Path to the Excel file
