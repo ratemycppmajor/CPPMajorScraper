@@ -213,35 +213,46 @@ export const scrapeCPP = async() => {
         gpaMap = new Map();
     }
 
-    // Step 3: Visit each major link and extract paragraph
+    // Step 3: Visit each major link and extract about section description
     interface Result {
         college: string;
         department: string;
         major: string;
+        imgSrc: string | null;
         url: string;
         description: string;
         averageGpa: number | null;
         slug: string;
     }
 
-    console.log("Scraping major descriptions...");
+    console.log("Scraping major descriptions and image...");
     const results: Result[] = [];
     for (const college of cleanedData) {
         for (const dept of college.departments) {
             for (const major of dept.majors) {
                 let description: string | null = null;
+                let imgSrc: string | null = null;
                 try {
                     const majorPage = await browser.newPage();
                     await majorPage.goto(major.href, { waitUntil: "domcontentloaded", timeout: 20000 });
 
-                    const selector = "p.body1.eggshell-heading-stat-box__copy";
-                    const found = await majorPage.$(selector);
+                    const aboutSelector = "p.body1.eggshell-heading-stat-box__copy";
+                    const imgSelector = "img.hero-third-level__image";
+                    
+                    const aboutFound = await majorPage.$(aboutSelector);
+                    const imgFound = await majorPage.$(imgSelector);
 
-                    if (found) {
-                        description = await majorPage.$eval(selector, el =>
+                    if (aboutFound) {
+                        description = await majorPage.$eval(aboutSelector, el =>
                             (el.textContent || "")
                                 .replace(/\s+/g, " ")    // collapse all whitespace/newlines into single spaces
                                 .trim()
+                        );
+                    }
+
+                    if (imgFound) {
+                        imgSrc = await majorPage.$eval(imgSelector, img =>
+                            img.src
                         );
                     }
 
@@ -265,6 +276,7 @@ export const scrapeCPP = async() => {
                     college: college.college,
                     department: dept.department,
                     major: major.name,
+                    imgSrc: imgSrc,
                     url: major.href,
                     description: description || "N/A",
                     averageGpa,
@@ -288,7 +300,7 @@ export const scrapeCPP = async() => {
     console.log("Saving data to database...");
 
     for (const entry of results) {
-        const { college, department, major, url, description, averageGpa, slug } = entry;
+        const { college, department, major, imgSrc, url, description, averageGpa, slug } = entry;
 
         const dbCollege = await prisma.college.upsert({
             where: { name: college },
@@ -324,6 +336,7 @@ export const scrapeCPP = async() => {
             },
             create: {
                 name: major,
+                imgSrc,
                 url,
                 description,
                 averageGpa,

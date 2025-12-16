@@ -37,6 +37,7 @@ export type MajorSumAggregateOutputType = {
 export type MajorMinAggregateOutputType = {
   id: string | null
   name: string | null
+  imgSrc: string | null
   url: string | null
   description: string | null
   departmentId: string | null
@@ -49,6 +50,7 @@ export type MajorMinAggregateOutputType = {
 export type MajorMaxAggregateOutputType = {
   id: string | null
   name: string | null
+  imgSrc: string | null
   url: string | null
   description: string | null
   departmentId: string | null
@@ -61,6 +63,7 @@ export type MajorMaxAggregateOutputType = {
 export type MajorCountAggregateOutputType = {
   id: number
   name: number
+  imgSrc: number
   url: number
   description: number
   departmentId: number
@@ -83,6 +86,7 @@ export type MajorSumAggregateInputType = {
 export type MajorMinAggregateInputType = {
   id?: true
   name?: true
+  imgSrc?: true
   url?: true
   description?: true
   departmentId?: true
@@ -95,6 +99,7 @@ export type MajorMinAggregateInputType = {
 export type MajorMaxAggregateInputType = {
   id?: true
   name?: true
+  imgSrc?: true
   url?: true
   description?: true
   departmentId?: true
@@ -107,6 +112,7 @@ export type MajorMaxAggregateInputType = {
 export type MajorCountAggregateInputType = {
   id?: true
   name?: true
+  imgSrc?: true
   url?: true
   description?: true
   departmentId?: true
@@ -206,6 +212,7 @@ export type MajorGroupByArgs<ExtArgs extends runtime.Types.Extensions.InternalAr
 export type MajorGroupByOutputType = {
   id: string
   name: string
+  imgSrc: string | null
   url: string | null
   description: string | null
   departmentId: string
@@ -241,6 +248,7 @@ export type MajorWhereInput = {
   NOT?: Prisma.MajorWhereInput | Prisma.MajorWhereInput[]
   id?: Prisma.StringFilter<"Major"> | string
   name?: Prisma.StringFilter<"Major"> | string
+  imgSrc?: Prisma.StringNullableFilter<"Major"> | string | null
   url?: Prisma.StringNullableFilter<"Major"> | string | null
   description?: Prisma.StringNullableFilter<"Major"> | string | null
   departmentId?: Prisma.StringFilter<"Major"> | string
@@ -255,6 +263,7 @@ export type MajorWhereInput = {
 export type MajorOrderByWithRelationInput = {
   id?: Prisma.SortOrder
   name?: Prisma.SortOrder
+  imgSrc?: Prisma.SortOrderInput | Prisma.SortOrder
   url?: Prisma.SortOrderInput | Prisma.SortOrder
   description?: Prisma.SortOrderInput | Prisma.SortOrder
   departmentId?: Prisma.SortOrder
@@ -274,6 +283,7 @@ export type MajorWhereUniqueInput = Prisma.AtLeast<{
   OR?: Prisma.MajorWhereInput[]
   NOT?: Prisma.MajorWhereInput | Prisma.MajorWhereInput[]
   name?: Prisma.StringFilter<"Major"> | string
+  imgSrc?: Prisma.StringNullableFilter<"Major"> | string | null
   url?: Prisma.StringNullableFilter<"Major"> | string | null
   description?: Prisma.StringNullableFilter<"Major"> | string | null
   departmentId?: Prisma.StringFilter<"Major"> | string
@@ -287,6 +297,7 @@ export type MajorWhereUniqueInput = Prisma.AtLeast<{
 export type MajorOrderByWithAggregationInput = {
   id?: Prisma.SortOrder
   name?: Prisma.SortOrder
+  imgSrc?: Prisma.SortOrderInput | Prisma.SortOrder
   url?: Prisma.SortOrderInput | Prisma.SortOrder
   description?: Prisma.SortOrderInput | Prisma.SortOrder
   departmentId?: Prisma.SortOrder
@@ -307,6 +318,7 @@ export type MajorScalarWhereWithAggregatesInput = {
   NOT?: Prisma.MajorScalarWhereWithAggregatesInput | Prisma.MajorScalarWhereWithAggregatesInput[]
   id?: Prisma.StringWithAggregatesFilter<"Major"> | string
   name?: Prisma.StringWithAggregatesFilter<"Major"> | string
+  imgSrc?: Prisma.StringNullableWithAggregatesFilter<"Major"> | string | null
   url?: Prisma.StringNullableWithAggregatesFilter<"Major"> | string | null
   description?: Prisma.StringNullableWithAggregatesFilter<"Major"> | string | null
   departmentId?: Prisma.StringWithAggregatesFilter<"Major"> | string
@@ -319,6 +331,7 @@ export type MajorScalarWhereWithAggregatesInput = {
 export type MajorCreateInput = {
   id?: string
   name: string
+  imgSrc?: string | null
   url?: string | null
   description?: string | null
   averageGpa?: number | null
@@ -332,6 +345,7 @@ export type MajorCreateInput = {
 export type MajorUncheckedCreateInput = {
   id?: string
   name: string
+  imgSrc?: string | null
   url?: string | null
   description?: string | null
   departmentId: string
@@ -345,6 +359,7 @@ export type MajorUncheckedCreateInput = {
 export type MajorUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
+  imgSrc?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
@@ -358,6 +373,7 @@ export type MajorUpdateInput = {
 export type MajorUncheckedUpdateInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
+  imgSrc?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   departmentId?: Prisma.StringFieldUpdateOperationsInput | string
@@ -371,6 +387,7 @@ export type MajorUncheckedUpdateInput = {
 export type MajorCreateManyInput = {
   id?: string
   name: string
+  imgSrc?: string | null
   url?: string | null
   description?: string | null
   departmentId: string
@@ -383,6 +400,7 @@ export type MajorCreateManyInput = {
 export type MajorUpdateManyMutationInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
+  imgSrc?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
@@ -394,6 +412,7 @@ export type MajorUpdateManyMutationInput = {
 export type MajorUncheckedUpdateManyInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
+  imgSrc?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   departmentId?: Prisma.StringFieldUpdateOperationsInput | string
@@ -421,6 +440,7 @@ export type MajorNameDepartmentIdCompoundUniqueInput = {
 export type MajorCountOrderByAggregateInput = {
   id?: Prisma.SortOrder
   name?: Prisma.SortOrder
+  imgSrc?: Prisma.SortOrder
   url?: Prisma.SortOrder
   description?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
@@ -437,6 +457,7 @@ export type MajorAvgOrderByAggregateInput = {
 export type MajorMaxOrderByAggregateInput = {
   id?: Prisma.SortOrder
   name?: Prisma.SortOrder
+  imgSrc?: Prisma.SortOrder
   url?: Prisma.SortOrder
   description?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
@@ -449,6 +470,7 @@ export type MajorMaxOrderByAggregateInput = {
 export type MajorMinOrderByAggregateInput = {
   id?: Prisma.SortOrder
   name?: Prisma.SortOrder
+  imgSrc?: Prisma.SortOrder
   url?: Prisma.SortOrder
   description?: Prisma.SortOrder
   departmentId?: Prisma.SortOrder
@@ -538,6 +560,7 @@ export type MajorUpdateOneRequiredWithoutReviewsNestedInput = {
 export type MajorCreateWithoutDepartmentInput = {
   id?: string
   name: string
+  imgSrc?: string | null
   url?: string | null
   description?: string | null
   averageGpa?: number | null
@@ -550,6 +573,7 @@ export type MajorCreateWithoutDepartmentInput = {
 export type MajorUncheckedCreateWithoutDepartmentInput = {
   id?: string
   name: string
+  imgSrc?: string | null
   url?: string | null
   description?: string | null
   averageGpa?: number | null
@@ -591,6 +615,7 @@ export type MajorScalarWhereInput = {
   NOT?: Prisma.MajorScalarWhereInput | Prisma.MajorScalarWhereInput[]
   id?: Prisma.StringFilter<"Major"> | string
   name?: Prisma.StringFilter<"Major"> | string
+  imgSrc?: Prisma.StringNullableFilter<"Major"> | string | null
   url?: Prisma.StringNullableFilter<"Major"> | string | null
   description?: Prisma.StringNullableFilter<"Major"> | string | null
   departmentId?: Prisma.StringFilter<"Major"> | string
@@ -603,6 +628,7 @@ export type MajorScalarWhereInput = {
 export type MajorCreateWithoutReviewsInput = {
   id?: string
   name: string
+  imgSrc?: string | null
   url?: string | null
   description?: string | null
   averageGpa?: number | null
@@ -615,6 +641,7 @@ export type MajorCreateWithoutReviewsInput = {
 export type MajorUncheckedCreateWithoutReviewsInput = {
   id?: string
   name: string
+  imgSrc?: string | null
   url?: string | null
   description?: string | null
   departmentId: string
@@ -643,6 +670,7 @@ export type MajorUpdateToOneWithWhereWithoutReviewsInput = {
 export type MajorUpdateWithoutReviewsInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
+  imgSrc?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
@@ -655,6 +683,7 @@ export type MajorUpdateWithoutReviewsInput = {
 export type MajorUncheckedUpdateWithoutReviewsInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
+  imgSrc?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   departmentId?: Prisma.StringFieldUpdateOperationsInput | string
@@ -667,6 +696,7 @@ export type MajorUncheckedUpdateWithoutReviewsInput = {
 export type MajorCreateManyDepartmentInput = {
   id?: string
   name: string
+  imgSrc?: string | null
   url?: string | null
   description?: string | null
   averageGpa?: number | null
@@ -678,6 +708,7 @@ export type MajorCreateManyDepartmentInput = {
 export type MajorUpdateWithoutDepartmentInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
+  imgSrc?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
@@ -690,6 +721,7 @@ export type MajorUpdateWithoutDepartmentInput = {
 export type MajorUncheckedUpdateWithoutDepartmentInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
+  imgSrc?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
@@ -702,6 +734,7 @@ export type MajorUncheckedUpdateWithoutDepartmentInput = {
 export type MajorUncheckedUpdateManyWithoutDepartmentInput = {
   id?: Prisma.StringFieldUpdateOperationsInput | string
   name?: Prisma.StringFieldUpdateOperationsInput | string
+  imgSrc?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   url?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   description?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   averageGpa?: Prisma.NullableFloatFieldUpdateOperationsInput | number | null
@@ -744,6 +777,7 @@ export type MajorCountOutputTypeCountReviewsArgs<ExtArgs extends runtime.Types.E
 export type MajorSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
   name?: boolean
+  imgSrc?: boolean
   url?: boolean
   description?: boolean
   departmentId?: boolean
@@ -759,6 +793,7 @@ export type MajorSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = 
 export type MajorSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
   name?: boolean
+  imgSrc?: boolean
   url?: boolean
   description?: boolean
   departmentId?: boolean
@@ -772,6 +807,7 @@ export type MajorSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensi
 export type MajorSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
   id?: boolean
   name?: boolean
+  imgSrc?: boolean
   url?: boolean
   description?: boolean
   departmentId?: boolean
@@ -785,6 +821,7 @@ export type MajorSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensi
 export type MajorSelectScalar = {
   id?: boolean
   name?: boolean
+  imgSrc?: boolean
   url?: boolean
   description?: boolean
   departmentId?: boolean
@@ -794,7 +831,7 @@ export type MajorSelectScalar = {
   updatedAt?: boolean
 }
 
-export type MajorOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "url" | "description" | "departmentId" | "averageGpa" | "slug" | "createdAt" | "updatedAt", ExtArgs["result"]["major"]>
+export type MajorOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "imgSrc" | "url" | "description" | "departmentId" | "averageGpa" | "slug" | "createdAt" | "updatedAt", ExtArgs["result"]["major"]>
 export type MajorInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   reviews?: boolean | Prisma.Major$reviewsArgs<ExtArgs>
   department?: boolean | Prisma.DepartmentDefaultArgs<ExtArgs>
@@ -816,6 +853,7 @@ export type $MajorPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs 
   scalars: runtime.Types.Extensions.GetPayloadResult<{
     id: string
     name: string
+    imgSrc: string | null
     url: string | null
     description: string | null
     departmentId: string
@@ -1250,6 +1288,7 @@ export interface Prisma__MajorClient<T, Null = never, ExtArgs extends runtime.Ty
 export interface MajorFieldRefs {
   readonly id: Prisma.FieldRef<"Major", 'String'>
   readonly name: Prisma.FieldRef<"Major", 'String'>
+  readonly imgSrc: Prisma.FieldRef<"Major", 'String'>
   readonly url: Prisma.FieldRef<"Major", 'String'>
   readonly description: Prisma.FieldRef<"Major", 'String'>
   readonly departmentId: Prisma.FieldRef<"Major", 'String'>

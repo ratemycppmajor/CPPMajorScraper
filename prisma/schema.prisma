@@ -30,6 +30,7 @@ model Department {
 model Major {
   id           String     @id @default(cuid())
   name         String
+  imgSrc       String?
   url          String?
   description  String?
   departmentId String
