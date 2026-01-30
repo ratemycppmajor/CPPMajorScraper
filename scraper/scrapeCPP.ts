@@ -245,11 +245,10 @@ export const scrapeCPP = async() => {
                     if (aboutFound) {
                         description = await majorPage.$eval(aboutSelector, el =>
                             (el.textContent || "")
-                                .replace(/\s+/g, " ")    // collapse all whitespace/newlines into single spaces
+                                .replace(/\s+/g, " ")   
                                 .trim()
                         );
                     }
-
                     if (imgFound) {
                         imgSrc = await majorPage.$eval(imgSelector, img =>
                             img.src
