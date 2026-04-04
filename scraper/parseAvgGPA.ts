@@ -48,12 +48,12 @@ export const parseAvgGPA = (excelPath: string): Map<string, number[]> => {
 
     // Process each row
     for (const row of data) {
-        const majorName = row[majorColumnKey];
-        const gpa = row[gpaColumnKey];
+        const majorName = row[majorColumnKey]; // row["Acad Plan/Major"] "Computer Science"
+        const gpa = row[gpaColumnKey]; // row["Average GPA"]  3.24
 
         const majorNameStr = String(majorName).trim();
         
-        // Store all GPAs for this major name (we'll match later)
+        // Store all GPAs for this major name
         if (!majorGpaMap.has(majorNameStr)) {
             majorGpaMap.set(majorNameStr, []);
         }
@@ -78,7 +78,7 @@ export const calculateAverageGPAForMajor = (
 ): number | null => {
     const matchingGPAs: number[] = [];
 
-    // Search for all records where the major name contains the search term 
+    // Search for all records where the major name contains the search term    
     for (const [excelMajorName, gpas] of gpaMap.entries()) {
         if (excelMajorName.includes(majorName)) {
             matchingGPAs.push(...gpas);

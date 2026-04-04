@@ -169,20 +169,10 @@ export const scrapeCPP = async() => {
         href: string;
     }
 
-    interface Department {
-        department: string;
-        majors: Major[];
-    }
-
-    interface College {
-        college: string;
-        departments: Department[];
-    }
-
-    const cleanedData: College[] = [];
+    const cleanedData = [];
 
     for (const college of collegesData) {
-        const departments: Department[] = [];
+        const departments = [];
         for (const dept of college.departments) {
             const cleanedMajors = dept.majors.map(major => ({
                 name: cleanMajorName(major.name),
