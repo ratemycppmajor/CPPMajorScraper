@@ -71,7 +71,6 @@ const SPECIAL_MAJOR_SLUGS: Record<string, string> = {
     "Early Childhood Studies Integrated Teacher Education Program Education Specialist: Mild to Moderate Support Needs" : "ecs-itep-mm-support",
     "Liberal Studies Integrated Teacher Education Program Education Specialist: Extensive Support Needs" : "ls-itep-extensive-support",
     "Liberal Studies Integrated Teacher Education Program Education Specialist: Mild to Moderate Support Needs" : "ls-itep-mm-support",
-    "Applied Linguistics (Blended B.A. + M.A. Program)" : "applied-linguistics-blended-ba-ma"  
 };
 
 /**
@@ -103,10 +102,6 @@ const FALLBACK_DESCRIPTIONS: Record<string, FallbackDescription> = {
             "Address problems raised by AI’s increasingly pervasive influence on society—problems such as algorithmic bias and the question of how to address it; moral and legal responsibility for AI decision making; displacement of a wide range of human jobs from computer coding to truck driving; and the environmental impacts of AI. Effectively addressing these problems requires skill in negotiating competing values and acute sensitivity to the social and cultural contexts in which AI’s harms and benefits arise.",
         url: "https://www.cpp.edu/class/science-technology-society/about-page.shtml#ai-ethics",
     },
-    "Applied Linguistics (Blended B.A. + M.A. Program)": {
-        description: "Dive into linguistics, the scientific exploration of language and its connection to real-world applications. In the Applied Linguistics option, you will gain the skills needed to help solve language-related issues in fields related to teaching, language learning, language policy, education, communication, media, business, medicine and so much more. You'll progress from introductory concepts to specialized seminar topics, culminating in a capstone project where you will conduct your own independent research on a linguistic topic of your choice.",
-        url: "https://catalog.cpp.edu/preview_program.php?catoid=69&poid=22066&returnto=5895"
-    }
 };
 
 export const scrapeCPP = async() => {
@@ -174,7 +169,11 @@ export const scrapeCPP = async() => {
     for (const college of collegesData) {
         const departments = [];
         for (const dept of college.departments) {
-            const cleanedMajors = dept.majors.map(major => ({
+            const cleanedMajors = dept.majors
+            .filter(major => 
+                !major.name.includes("(Blended B.A. + M.A. Program)")
+            )
+            .map(major => ({
                 name: cleanMajorName(major.name),
                 href: major.href,
             })).filter(major => major.name !== "Music Education Pre-credential");
