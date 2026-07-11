@@ -13,7 +13,7 @@ export const parseAvgGPA = (excelPath: string): Map<string, number[]> => {
     const sheetName = workbook.SheetNames.find(name => name === "FTS Avg GPA by Major");
 
     if (!sheetName) {
-        throw new Error(`Sheet "FTS Avg GPA by Major" not found. Avail Sheets: ${workbook.SheetNames.join(", ")}`);
+        throw new Error(`Sheet "FTS Avg GPA by Major" not found. Availb Sheets: ${workbook.SheetNames.join(", ")}`);
     }
 
     const sheet = workbook.Sheets[sheetName];
